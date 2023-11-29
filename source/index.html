@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Cat Energy</title>
   <link rel="stylesheet" href="../source/css/style.css" />
 </head>
 
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
-      <picture>
-        <img class="logo__image" src="#" alt="Cat Energy">
-      </picture>
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="main-nav__wrapper">
+        <a class="main-nav__logo logo" href="#">
+          <picture>
+            <img class="logo__image" src="./img/logo-mobile-cat.svg" alt="Cat Energy">
+          </picture>
+        </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--curent">
-            <a>
+            <a class="site-list__link" href="#">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               Подбор программы
             </a>
           </li>
         </ul>
       </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
   </header>
   <main class="main-container">
@@ -44,8 +45,8 @@
     <section class="welcome">
       <div class="welcome__wrapper">
         <h2 class="welcome__title">Функциональное питание для котов</h2>
-        <p class="welcome__inro">Занялся собой? Займись котом!</p>
-        <a class="welcome__program-selection button-link">Подобрать программу</a>
+        <p class="welcome__intro">Занялся собой? Займись котом!</p>
+        <a class="welcome__program-selection button-link" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="nutrition">
@@ -91,7 +92,7 @@
       <p class="case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
         16 часов в день. </p>
-        <dl>
+        <dl class="case__holder">
       <div class="case__item">
         <dt class="case__number">
           5 кг
@@ -109,7 +110,7 @@
         </dd>
       </div>
       </dl>
-      <p>Затраты на питание: 15 000 РУБ.</p>
+      <p class="case__text">Затраты на питание: 15 000 РУБ.</p>
       <div class="case__slider">
 
       </div>

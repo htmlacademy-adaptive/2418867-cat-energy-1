@@ -1,0 +1,48 @@
+.case {
+  width: 1220px;
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  &__description {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  &__holder {
+    display: flex;
+  }
+
+  &__number {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+  }
+
+  &__information {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #444444;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
