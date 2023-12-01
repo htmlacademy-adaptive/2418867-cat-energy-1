@@ -1,31 +1,55 @@
 .welcome {
-  width: 414px;
+  min-height: 600px;
+
+  &__wrapper {
+    background-image: url("../img/welcome-background-mobile.png");
+    background-size: cover;
+    padding-bottom: 75%;
+    background-position: center;
+    box-shadow: inset 0 0 0 200vw rgba(104, 183, 56, 0.85);
+    position: relative;
+  }
+
+  &__wrapper::after {
+    content: "";
+    background-image: url("../img/welcome-product.png");
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 55%;
+    left: 0;
+  }
 
   &__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 59px;
-    line-height: 60px;
+    color: #ffffff;
+    font-family: $font-oswald;
+    font-size: 36px;
     font-weight: 400;
+    line-height: 36px;
     margin: 0;
     padding: 0;
+    text-align: center;
+    position: relative;
+    top: 1em;
   }
 
   &__intro {
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    line-height: 20px;
+    color: #ffffff;
+    font-family: $font-oswald;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    text-align: center;
+    position: relative;
+    top: 4em;
   }
 
   &__program-selection {
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
+    display: block;
+    position: relative;
   }
 }

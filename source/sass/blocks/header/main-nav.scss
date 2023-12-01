@@ -1,0 +1,15 @@
+.main-nav {}
+
+.main-nav__list {}
+
+.main-nav__toggle {
+  width: 18px;
+  height: 18px;
+  display: block;
+  border: none;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 21px;
+}
