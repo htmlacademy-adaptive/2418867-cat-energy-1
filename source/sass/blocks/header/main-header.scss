@@ -9,3 +9,21 @@
   top: 13px;
   left: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding: 0;
+    background: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 0 0 83px;
+
+    &__logo {
+      top: 65px;
+      left: 129px;
+    }
+  }
+}

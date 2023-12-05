@@ -7,6 +7,8 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
+    margin: 0;
+    padding: 15px 0 10px 12px;
   }
 
   &__description {
@@ -15,11 +17,15 @@
     font-weight: 400;
     line-height: 18px;
     color: #444444;
+    margin: 0;
+    padding: 31px 7px 16px 12px;
   }
 
   &__holder {
     display: flex;
     justify-content: space-around;
+    margin: 0;
+    padding: 23px 10px 13px 11px;
   }
 
   &__number {
@@ -47,5 +53,67 @@
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .case {
+    background: none;
+    min-height: 356px;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 0 0 12px 20px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 48px 7px 16px 20px;
+      margin: 0 0 26px 0;
+    }
+
+    &__wrapper {
+      display: flex;
+      padding: 0 12px 0 0;
+    }
+
+    &__holder {
+      width: 534px;
+      justify-content: flex-start;
+      padding: 28px 3px 13px 17px;
+    }
+
+    &__item {
+      width: 169px;
+    }
+
+    &__item:not(:last-child) {
+      margin: 0 35px 0 0;
+    }
+
+    &__number {
+      font-size: 30px;
+      line-height: 37px;
+      text-transform: uppercase;
+      padding: 0 0 10px;
+    }
+
+    &__information {
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+    }
+
+    &__text {
+      text-align: right;
+      align-self: center;
+      font-size: 20px;
+      line-height: 29px;
+      width: 172px;
+      flex-grow: 1;
+    }
   }
 }

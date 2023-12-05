@@ -21,3 +21,37 @@
   padding: 23px 0 22px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 10px 10px;
+    border-bottom: none;
+
+    &__link {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__item {
+      padding: 0 7px 10px 26px;
+      border-top: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    padding: 12px 10px 10px;
+
+    &__link {
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    &__item {
+      padding: 0 0 10px 33px;
+    }
+  }
+}

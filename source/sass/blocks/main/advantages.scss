@@ -1,5 +1,5 @@
 .advantages {
-  padding: 10px 10px;
+  padding: 4px 10px 46px 10px;
 
   &__title {
     font-family: $font-oswald;
@@ -7,25 +7,26 @@
     font-weight: 400;
     line-height: 40px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 13px;
   }
 
   &__list {
-    padding: 0;
+    padding: 23px 0 0 0;
     margin: 0;
   }
 
   &__item {
     list-style: none;
     position: relative;
-    padding: 10px 10px 10px 100px;
+    padding: 20px 12px 6px 90px;
+    max-width: 485px;
   }
 
   &__item--useful::after {
     content: "";
     position: absolute;
-    top: 17%;
-    left: 5%;
+    top: 17px;
+    left: 12px;
     width: 60px;
     height: 60px;
     background: url("../img/advantages/useful.svg") no-repeat center #68b738;
@@ -34,8 +35,8 @@
   &__item--powder::after {
     content: "";
     position: absolute;
-    top: 17%;
-    left: 5%;
+    top: 17px;
+    left: 12px;
     width: 60px;
     height: 60px;
     background: url("../img/advantages/powder.svg") no-repeat center #68b738;
@@ -44,8 +45,8 @@
   &__item--replacement::after {
     content: "";
     position: absolute;
-    top: 17%;
-    left: 5%;
+    top: 17px;
+    left: 12px;
     width: 60px;
     height: 60px;
     background: url("../img/advantages/replacement.svg") no-repeat center #68b738;
@@ -54,8 +55,8 @@
   &__item--result::after {
     content: "";
     position: absolute;
-    top: 17%;
-    left: 5%;
+    top: 17px;
+    left: 12px;
     width: 60px;
     height: 60px;
     background: url("../img/advantages/result.svg") no-repeat center #68b738;
@@ -63,9 +64,9 @@
 
   &__description {
     font-family: $font-lato;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 18px;
     color: #444444;
     padding: 0;
     margin: 0;
@@ -74,6 +75,110 @@
   @media (max-width: $mobile-width-only) {
     &__number {
       display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 30px 10px 1px 17px;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px 0 0;
+      margin: 63px 0 0 0;
+    }
+
+    &__item {
+      padding: 108px 95px 45px 13px;
+      width: 240px;
+      position: relative;
+      margin: 0 0 93px;
+    }
+
+    &__item--useful::after {
+      top: -2px;
+      left: 13px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__item--powder::after {
+      top: -2px;
+      left: 13px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__item--replacement::after {
+      top: -3px;
+      left: 13px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__item--result::after {
+      top: -3px;
+      left: 13px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__number {
+      position: absolute;
+      top: -43px;
+      right: 88px;
+      z-index: -1;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      color: #f2f2f2;
+      font-family: $font-oswald;
+
+      &--first {
+        right: 111px;
+      }
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding: 56px 110px 0 110px;
+
+    &__title {
+      padding: 0;
+    }
+
+    &__list {
+      padding: 109px 0 0 0;
+      margin: 0 0 41px;
+    }
+
+    &__item {
+      padding: 100px 0 50px 0;
+      margin: 0;
+    }
+
+    &__number {
+      top: -77px;
+      right: -11px;
+
+      &--first {
+        right: 16px;
+      }
     }
   }
 }

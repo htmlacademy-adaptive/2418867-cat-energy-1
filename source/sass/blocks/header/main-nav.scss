@@ -13,3 +13,23 @@
   top: 22px;
   right: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    padding: 0 10px;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      min-width: 456px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding: 35px 100px 0 100px;
+  }
+}
