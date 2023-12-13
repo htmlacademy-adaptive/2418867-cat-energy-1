@@ -1,0 +1,166 @@
+.welcome {
+  &__container {
+    position: relative;
+    padding-bottom: 138px;
+
+    &::after {
+      content: "";
+      background-image: url("../img/index-cat-mobile.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 280px;
+      height: 270px;
+      bottom: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__wrapper {
+    background-color: #62a53b;
+    background-image: url("../img/welcome-background-mobile.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding: 27px 0 164px 0;
+    background-position: center 0;
+    position: relative;
+    min-height: 111px;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-family: $font-oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 auto 25px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    width: 284px;
+  }
+
+  &__intro {
+    color: #ffffff;
+    font-family: $font-oswald;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    width: 246px;
+  }
+
+  &__program-selection {
+    display: block;
+    position: relative;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .welcome {
+    padding: 35px 0 506px;
+    min-height: 284px;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../img/tablet/welcome-product-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 709px;
+      height: 609px;
+      bottom: -44px;
+      left: 51%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    &__container {
+      position: relative;
+      padding: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__wrapper {
+      background: none;
+      margin: 0 67px 0 120px;
+      padding: 0;
+    }
+
+    &__title {
+      color: #000000;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: start;
+      margin: 0 0 40px;
+      width: 416px;
+    }
+
+    &__intro {
+      color: #000000;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: start;
+      margin: 0 0 50px;
+      width: auto;
+    }
+
+    &__program-selection {
+      display: inline-flex;
+      padding: 14px 26px;
+      margin: 0 0 0 122px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 532px;
+
+    &::before {
+      content: "";
+      bottom: 56px;
+      left: 50%;
+      width: 720px;
+      height: calc(100% + 160px);
+      position: absolute;
+      z-index: -1;
+      background-color: #62a53b;
+      background-repeat: no-repeat;
+      background-image: url("../img/desktop/welcome-background-desktop.png");
+    }
+
+    &::after {
+      top: -72px;
+      left: 50%;
+      transform: translateX(-23%);
+      background-image: url("../img/desktop/welcome-product-desktop.png");
+    }
+
+    &__wrapper {
+      margin: 0 0 0 80px;
+    }
+
+    &__program-selection {
+      margin: 0 0 0 80px;
+    }
+
+    &__container {
+      padding: 8px 0 0 0;
+    }
+  }
+}
