@@ -200,9 +200,12 @@
 
 @media (min-width: $desktop-width) {
   .nutrition {
+    width: 1220px;
+    margin: 0 auto;
+
     &__list {
       display: flex;
-      padding: 20px 110px 16px 110px;
+      padding: 28px 0 16px 0;
     }
 
     &__item {

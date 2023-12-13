@@ -14,6 +14,11 @@
   .main-header {
     padding: 0;
     background: none;
+
+    &__logo {
+      top: 25px;
+      left: 29px;
+    }
   }
 }
 
@@ -22,8 +27,8 @@
     padding: 0 0 83px;
 
     &__logo {
-      top: 65px;
-      left: 129px;
+      top: 8px;
+      left: 153px;
     }
   }
 }
