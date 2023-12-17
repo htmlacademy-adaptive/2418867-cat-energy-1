@@ -1,0 +1,51 @@
+.input-text {
+  display: flex;
+  width: 100%;
+  gap: 14px;
+}
+
+.input-text__label {
+  color: #444444;
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  padding: 14px 0 0;
+}
+
+.input-text__input {
+  display: block;
+  height: 43px;
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
+  padding: 0 14px;
+  color: #444444;
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.input-text__input--comments {
+  min-height: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .input-text {
+    &__label {
+      padding: 12px 0 0;
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    &__input {
+      font-size: 20px;
+      line-height: normal;
+      height: 52px;
+      padding: 0 20px;
+    }
+  }
+}

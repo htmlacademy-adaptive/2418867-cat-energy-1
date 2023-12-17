@@ -1,0 +1,28 @@
+.optionally-group {
+  padding: 22px 21px 18px;
+
+  &__item:not(:last-child) {
+    margin: 0 0 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .optionally-group {
+    padding: 37px 23px 40px 72px;
+    border: none;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      min-width: 227px;
+      flex: 1;
+    }
+
+    &__item:not(:last-child) {
+      margin: 0 0 -5px;
+    }
+  }
+}
