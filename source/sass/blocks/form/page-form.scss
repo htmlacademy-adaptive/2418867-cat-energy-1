@@ -1,0 +1,25 @@
+.page-form {
+  padding-top: 28px;
+
+  &__title {
+    margin: 0 20px 37px;
+  }
+
+  &__text {
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    padding-top: 36px;
+
+    &__title {
+      margin: 0 20px 55px 69px;
+    }
+
+    &__text {
+      margin: 0 20px 0 71px;
+    }
+  }
+}

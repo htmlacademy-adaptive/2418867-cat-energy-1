@@ -1,0 +1,17 @@
+.contacts-group {
+  padding: 39px 20px 23px;
+
+  &__item:not(:last-child) {
+    margin: 0 0 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-group {
+    padding: 74px 23px 36px 70px;
+
+    &__item:not(:last-child) {
+      margin: 0 0 19px;
+    }
+  }
+}

@@ -1,8 +1,14 @@
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/visually-hidden.scss";
-@import "./blocks/page-body.scss";
 @import "./components/button-link.scss";
+@import "./components/inner-title.scss";
+@import "./components/inner-text.scss";
+@import "./components/input-text.scss";
+@import "./components/radio.scss";
+@import "./components/checkbox.scss";
+@import "./components/iframe-map.scss";
+@import "./blocks/page-body.scss";
 @import "./blocks/header/main-header.scss";
 @import "./blocks/header/main-nav.scss";
 @import "./blocks/header/site-list.scss";
@@ -15,3 +21,9 @@
 @import "./blocks/footer/cooperation.scss";
 @import "./blocks/footer/social.scss";
 @import "./blocks/footer/copyright.scss";
+@import "./blocks/form/page-form.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/name-group.scss";
+@import "./blocks/form/type-group.scss";
+@import "./blocks/form/contacts-group.scss";
+@import "./blocks/form/optionally-group.scss";
