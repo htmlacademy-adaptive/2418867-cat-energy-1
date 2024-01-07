@@ -2,35 +2,68 @@
   display: flex;
   width: 100%;
   gap: 14px;
-}
 
-.input-text__label {
-  color: #444444;
-  font-family: $font-oswald;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  display: block;
-  padding: 14px 0 0;
-}
+  &__label {
+    color: #444444;
+    font-family: $font-oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    display: block;
+    padding: 14px 0 0;
+  }
 
-.input-text__input {
-  display: block;
-  height: 43px;
-  flex-grow: 1;
-  border: 1px solid #e7e7e7;
-  padding: 0 14px;
-  color: #444444;
-  font-family: $font-oswald;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+  &__input {
+    display: block;
+    height: 43px;
+    flex-grow: 1;
+    border: 1px solid #e7e7e7;
+    padding: 0 14px;
+    color: #444444;
+    font-family: $font-oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    box-sizing: border-box;
 
-.input-text__input--comments {
-  min-height: 150px;
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid #444444;
+    }
+
+    // &:invalid {
+    //   outline: 2px solid #ff8282;
+    //   border: none;
+    // }
+  }
+
+  &__input--e-mail-icon {
+    position: relative;
+    background-image: url("data:image/svg+xml, %3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='email-stroke 1'%3E%3Cpath id='Vector' d='M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+  }
+
+  &__textarea {
+    color: #444444;
+    font-family: $font-oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 10px 0 18px;
+    resize: none;
+    width: 253px;
+    height: 150px;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -46,6 +79,24 @@
       line-height: normal;
       height: 52px;
       padding: 0 20px;
+    }
+
+    &__textarea {
+      font-size: 20px;
+      line-height: 30px;
+      width: 595px;
+      height: 160px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-text {
+    gap: 11px;
+
+    &__textarea {
+      width: 1189px;
+      height: 163px;
     }
   }
 }

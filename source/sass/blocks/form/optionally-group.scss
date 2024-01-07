@@ -1,5 +1,5 @@
 .optionally-group {
-  padding: 22px 21px 18px;
+  padding: 33px 21px 34px 20px;
 
   &__item:not(:last-child) {
     margin: 0 0 13px;
@@ -8,21 +8,39 @@
 
 @media (min-width: $tablet-width) {
   .optionally-group {
-    padding: 37px 23px 40px 72px;
-    border: none;
+    padding: 54px 23px 47px 72px;
 
     &__list {
       display: flex;
       flex-wrap: wrap;
+      width: 659px;
+      gap: 27px;
     }
 
     &__item {
       min-width: 227px;
       flex: 1;
+      height: 46px;
     }
 
     &__item:not(:last-child) {
-      margin: 0 0 -5px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .optionally-group {
+    padding: 51px 0 47px 0;
+    margin-block: 0 12px;
+
+    &__list {
+      width: auto;
+      gap: 80px;
+    }
+
+    &__item {
+      max-width: 316px;
     }
   }
 }

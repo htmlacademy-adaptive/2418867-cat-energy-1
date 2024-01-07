@@ -19,18 +19,18 @@
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--curent">
+        <li class="site-list__item">
           <a class="site-list__link" href="index.html">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">
+          <a class="site-list__link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">
+          <a class="site-list__link site-list__link--active" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -44,60 +44,65 @@
     <h1 class="inner-title page-form__title">Подбор программы</h1>
     <p class="inner-text page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form action="" class="form">
-      <fieldset class="form__group name-group">
-        <legend class="visually-hidden">Имя питомца</legend>
-        <ul class="form__list name-group__list">
-          <li class="name-group__item input-text">
-            <label for="name" class="input-text__label">ИМЯ:*</label>
-            <input id="name" type="text" class="input-text__input" placeholder="барсик">
-          </li>
-          <li class="name-group__item input-text">
-            <label for="" class="input-text__label">Вес (кг):*</label>
-            <input type="text" class="input-text__input" placeholder="7">
-          </li>
-          <li class="name-group__item input-text">
-            <label for="" class="input-text__label">Возраст&nbsp;(лет):</label>
-            <input type="text" class="input-text__input" placeholder="7">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__group type-group">
-        <legend class="visually-hidden">Выбор типа программы</legend>
-        <ul class="form__list type-group__list">
-          <li class="type-group__item radio">
-            <input type="radio" class="visually-hidden radio__input" name="type" id="loss" value="loss" checked>
-            <label for="loss" class="radio__label">похудение</label>
-          </li>
-          <li class="type-group__item radio">
-            <input type="radio" class="visually-hidden radio__input" name="type" id="gain" value="gain">
-            <label for="gain" class="radio__label">Набор массы</label>
-          </li>
-          <li class="type-group__item radio">
-            <input type="radio" class="visually-hidden radio__input" name="type" id="advise" value="advise">
-            <label for="advise" class="radio__label">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form__box-fieldset">
+        <fieldset class="form__group name-group">
+          <legend class="visually-hidden">Имя питомца</legend>
+          <ul class="form__list name-group__list">
+            <li class="name-group__item input-text">
+              <label for="name" class="input-text__label">ИМЯ:*</label>
+              <input id="name" type="text" class="input-text__input" placeholder="барсик" required>
+            </li>
+            <li class="name-group__item input-text">
+              <label for="" class="input-text__label">Вес (кг):*</label>
+              <input type="text" class="input-text__input" placeholder="7" required>
+            </li>
+            <li class="name-group__item input-text">
+              <label for="" class="input-text__label">Возраст&nbsp;(лет):</label>
+              <input type="text" class="input-text__input" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group type-group">
+          <legend class="visually-hidden">Выбор типа программы</legend>
+          <ul class="form__list type-group__list">
+            <li class="type-group__item radio">
+              <input type="radio" class="visually-hidden radio__input" name="type" id="loss" value="loss" checked>
+              <label for="loss" class="radio__label">похудение</label>
+            </li>
+            <li class="type-group__item radio">
+              <input type="radio" class="visually-hidden radio__input" name="type" id="gain" value="gain">
+              <label for="gain" class="radio__label">Набор массы</label>
+            </li>
+            <li class="type-group__item radio">
+              <input type="radio" class="visually-hidden radio__input" name="type" id="advise" value="advise">
+              <label for="advise" class="radio__label">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="form__group contacts-group">
-        <legend class="form__title">Контактные данные(владельца кота)</legend>
+        <legend class="form__title line-title">
+          <span class="line-title__wrapper">Контактные данные(владельца кота)</span>
+        </legend>
         <ul class="form__list contacts-group__list">
           <li class="contacts-group__item input-text">
             <label for="name" class="input-text__label">E-mail:*</label>
-            <input id="name" type="text" class="input-text__input" placeholder="kuklachev@gmail.com">
+            <input id="name" type="text" class="input-text__input input-text__input--e-mail-icon" placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="contacts-group__item input-text">
             <label for="" class="input-text__label">Телефон:*</label>
-            <input type="text" class="input-text__input" placeholder="8 (960) 900-60-90">
+            <input type="text" class="input-text__input input-text__input--phone" placeholder="8 (960) 900-60-90" required>
           </li>
       </fieldset>
-      <fieldset class="form__group input-text">
+      <fieldset class="form__group comments-group input-text">
         <legend class="form__title">Комментарий</legend>
-        <label for="" class="input-text__label"></label>
-        <input type="text" class="input-text__input input-text__input--comments"
-          placeholder="Расскажите обо всех повaдках кота">
+        <textarea class="input-text__textarea" id="comments" name="comments" rows="5" cols="33"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__group optionally-group">
-        <legend class="form__title">Дополнительно</legend>
+        <legend class="form__title line-title">
+          <span class="line-title__wrapper">Дополнительно</span>
+        </legend>
         <ul class="form__list optionally-group__list">
           <li class="optionally-group__item checkbox">
             <input type="checkbox" class="visually-hidden checkbox__input" name="type" id="shugar" value="shugar"
@@ -137,10 +142,15 @@
         </address>
       </div>
       <div class="map__google">
-        <iframe class="iframe-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198202!2d30.320472477365172!3d59.938719162093534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1701779531692!5m2!1suk!2sua"
+        <iframe class="map__iframe-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477602884!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1703059543433!5m2!1sru!2sru"
           width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/map/map-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="./img/map/map-tablet.jpg">
+          <img class="map__google-alt" src="./img/map/map-phone.jpg" alt="Google Map">
+        </picture>
       </div>
     </section>
     <div class="main-footer__social social">

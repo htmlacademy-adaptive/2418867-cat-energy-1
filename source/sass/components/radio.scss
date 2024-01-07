@@ -11,6 +11,10 @@
     position: relative;
     min-height: 30px;
     box-sizing: border-box;
+
+    &:hover::before {
+      border: 1px solid #bababa;
+    }
   }
 
   &__label::before {

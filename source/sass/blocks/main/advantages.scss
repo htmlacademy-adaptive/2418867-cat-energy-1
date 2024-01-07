@@ -20,6 +20,7 @@
     position: relative;
     padding: 20px 12px 6px 90px;
     max-width: 485px;
+    height: 54px;
   }
 
   &__item--useful::after {
@@ -101,6 +102,7 @@
       width: 240px;
       position: relative;
       margin: 0 0 93px;
+      height: auto;
     }
 
     &__item--useful::after {

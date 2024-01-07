@@ -13,11 +13,23 @@
 
 @media (min-width: $tablet-width) {
   .name-group {
-    padding: 61px 23px 36px 70px;
+    padding: 66px 67px 71px 70px;
     border: none;
 
     &__item:not(:last-child) {
       margin: 0 0 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name-group {
+    flex: 1;
+    padding: 68px 5px 73px 0;
+    margin-inline: 0 48px;
+
+    &__item:not(:last-child) {
+      margin: 0 0 18px;
     }
   }
 }

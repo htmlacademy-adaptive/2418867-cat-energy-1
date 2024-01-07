@@ -1,5 +1,6 @@
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
+@import "./global/logo.scss";
 @import "./global/visually-hidden.scss";
 @import "./components/button-link.scss";
 @import "./components/inner-title.scss";
@@ -7,6 +8,7 @@
 @import "./components/input-text.scss";
 @import "./components/radio.scss";
 @import "./components/checkbox.scss";
+@import "./components/line-title.scss";
 @import "./components/iframe-map.scss";
 @import "./blocks/page-body.scss";
 @import "./blocks/header/main-header.scss";
@@ -27,3 +29,9 @@
 @import "./blocks/form/type-group.scss";
 @import "./blocks/form/contacts-group.scss";
 @import "./blocks/form/optionally-group.scss";
+@import "./blocks/form/comments-group.scss";
+@import "./blocks/catalog/page-catalog.scss";
+@import "./blocks/catalog/product.scss";
+@import "./blocks/catalog/optionally.scss";
+@import "./blocks/catalog/product-promo.scss";
+@import "./blocks/catalog/image-catalog.scss";
