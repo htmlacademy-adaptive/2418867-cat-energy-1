@@ -12,6 +12,10 @@
     padding: 20px 20px;
   }
 
+  &__item:not(:last-child) {
+    margin: 0 10px 0 4px;
+  }
+
   &__link {
     position: relative;
   }
@@ -44,5 +48,25 @@
     background-image: url("../img/social/telegram.svg");
     width: 28px;
     height: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    &__list {
+      padding: 0 9px 0 38px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    &__list {
+      padding: 0 6px 0 42px;
+    }
+
+    &__item:not(:last-child) {
+      margin: 0 12px 0 0;
+    }
   }
 }

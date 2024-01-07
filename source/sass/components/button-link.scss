@@ -7,5 +7,13 @@
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

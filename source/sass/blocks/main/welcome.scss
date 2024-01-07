@@ -63,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .welcome {
-    padding: 35px 0 506px;
+    padding: 33px 0 506px;
     min-height: 284px;
     position: relative;
 
@@ -126,29 +126,36 @@
 
 @media (min-width: $desktop-width) {
   .welcome {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 55px 0 0;
     min-height: 532px;
 
     &::before {
       content: "";
       bottom: 56px;
       left: 50%;
-      width: 720px;
+      width: 50%;
       height: calc(100% + 160px);
       position: absolute;
       z-index: -1;
       background-color: #62a53b;
       background-repeat: no-repeat;
       background-image: url("../img/desktop/welcome-background-desktop.png");
+      background-position: top right;
     }
 
     &::after {
-      top: -72px;
+      top: -18px;
       left: 50%;
       transform: translateX(-23%);
       background-image: url("../img/desktop/welcome-product-desktop.png");
+    }
+
+    &__box {
+      width: 1220px;
+      margin: 0 auto;
+      padding: 8px 0 0 0;
     }
 
     &__wrapper {
@@ -157,10 +164,7 @@
 
     &__program-selection {
       margin: 0 0 0 80px;
-    }
-
-    &__container {
-      padding: 8px 0 0 0;
+      padding: 14px 27px;
     }
   }
 }

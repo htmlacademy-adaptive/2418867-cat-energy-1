@@ -1,10 +1,13 @@
 .cooperation {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 25px 10px 25px 20px;
+  min-height: 90px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
 
   &__title {
-    margin: 0;
+    margin: 0 16px 0 0;
     padding: 0;
     color: #111111;
     font-family: $font-oswald;
@@ -12,6 +15,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    width: 140px;
     text-transform: uppercase;
   }
 
@@ -21,5 +25,54 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    width: 140px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .cooperation {
+    background-color: #f2f2f2;
+    min-height: 200px;
+    align-items: center;
+    padding: 0 63px 0 68px;
+    margin: 53px 0 0;
+
+    &__title {
+      width: 163px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &__address {
+      width: 157px;
+      font-size: 16px;
+      text-align: right;
+      line-height: 20px;
+      min-height: 80px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    padding: 60px 76px 55px 80px;
+    width: 567px;
+    position: absolute;
+    top: 38px;
+    left: 111px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &__address {
+      font-size: 16px;
+      text-align: left;
+      line-height: 20px;
+    }
   }
 }

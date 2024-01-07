@@ -1,0 +1,17 @@
+.comments-group {
+  padding: 42px 21px 7px 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments-group {
+    min-height: 236px;
+    padding: 85px 23px 40px 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments-group {
+    padding: 76px 23px 40px 0;
+    margin-block: 0 9px;
+  }
+}

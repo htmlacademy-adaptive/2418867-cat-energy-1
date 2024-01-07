@@ -6,11 +6,22 @@
   &__logo {
     display: block;
     text-align: center;
-    padding: 40px 20px;
+    padding: 35px 20px 16px;
   }
 
   &__copyright {
-    padding: 20px 20px 40px;
+    padding: 25px 58px 21px 18px;
+    position: relative;
+  }
+
+  &__copyright::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/logo-html-academy.svg");
   }
 }
 
@@ -20,6 +31,35 @@
       justify-content: space-between;
       display: flex;
       align-items: center;
+      min-height: 147px;
+      padding: 0 10px;
+    }
+
+    &__logo {
+      padding: 22px 20px 16px;
+    }
+
+    &__copyright {
+      padding: 18px 62px 21px 16px;
+    }
+
+    &__copyright::after {
+      top: 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding-block: 72px 0;
+
+    &__social {
+      padding: 0 94px;
+      min-height: 169px;
+    }
+
+    &__copyright {
+      padding: 18px 69px 21px 16px;
     }
   }
 }
