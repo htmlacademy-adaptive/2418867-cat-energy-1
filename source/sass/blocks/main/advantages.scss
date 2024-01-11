@@ -71,6 +71,7 @@
     color: #444444;
     padding: 0;
     margin: 0;
+    min-width: 193px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -152,6 +153,7 @@
     &__description {
       font-size: 16px;
       line-height: 24px;
+      width: auto;
     }
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   gap: 14px;
+  position: relative;
 
   &__label {
     color: #444444;
@@ -43,12 +44,35 @@
     // }
   }
 
-  &__input--e-mail-icon {
-    position: relative;
-    background-image: url("data:image/svg+xml, %3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='email-stroke 1'%3E%3Cpath id='Vector' d='M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 15px center;
+  &__email-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 13px;
+    top: 17px;
+    fill: #ffffff;
+    stroke: #000000;
   }
+
+  &__phone-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 13px;
+    top: 17px;
+    fill: #ffffff;
+    stroke: #000000;
+  }
+
+  &__input:focus + &__email-icon,
+  &__input:focus + &__phone-icon {
+    stroke: #69b738;
+  }
+
+  // // &__input:invalid + &__email-icon,
+  // &__input:invalid + &__phone-icon {
+  // //   stroke: #ff8282;
+  // // }
 
   &__textarea {
     color: #444444;

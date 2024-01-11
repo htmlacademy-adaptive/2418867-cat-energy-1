@@ -11,15 +11,17 @@
 
   &__item {
     margin: 0;
-    padding: 50px 0 53px;
+    padding: 36px 0 33px;
   }
 
   &__list {
+    border-bottom: solid 1px #cdcdcd;
     list-style: none;
+    padding-block: 11px 20px;
   }
 
-  &__list:not(:last-child) {
-    margin-block: 0 32px;
+  &__list:first-child {
+    border-top: solid 1px #cdcdcd;
   }
 
   &__subtitle {
@@ -61,8 +63,8 @@
     }
 
     &__item {
-      padding: 88px 0 101px;
-      margin-inline: 47px 39px;
+      padding: 76px 0 101px;
+      margin-inline: 7px 0;
     }
 
     &__list {
@@ -70,10 +72,9 @@
       grid-template-areas:
         "subtitle wrapper"
         "button button";
-    }
-
-    &__list:not(:last-child) {
-      margin-block: 0 46px;
+      padding: 14px 37px 30px;
+      border-bottom: solid 1px #cdcdcd;
+      border-inline: solid 1px #cdcdcd;
     }
 
     &__subtitle {
@@ -125,21 +126,15 @@
       display: grid;
       gap: 40px;
       width: 896px;
-      border-bottom: solid 1px #cdcdcd;
       align-items: center;
       min-height: 71px;
       grid-template-columns: 1fr 1fr 244px;
       grid-template-areas: "subtitle wrapper button";
-      padding-block: 9px;
+      padding: 9px 0;
+      border: none;
+      border-bottom: solid 1px #cdcdcd;
+      border-inline: none;
       box-sizing: border-box;
-    }
-
-    &__list:not(:last-child) {
-      margin-block: 0;
-    }
-
-    &__list:first-child {
-      border-top: solid 1px #cdcdcd;
     }
 
     &__subtitle {
