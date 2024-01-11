@@ -1,0 +1,35 @@
+.type-group {
+  padding: 22px 21px 18px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 0 25px;
+
+  &__item:not(:last-child) {
+    margin: 0 0 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .type-group {
+    padding: 0 10px 34px 3px;
+    border: 1px solid #e7e7e7;
+    margin: 0 68px 64px;
+
+    &__item:not(:last-child) {
+      margin: 0 0 -5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-group {
+    flex: 1;
+    margin: 0 0 0 26px;
+    padding: 0;
+    max-height: 200px;
+    align-self: center;
+
+    &__list {
+      padding: 0 0 35px 2px;
+    }
+  }
+}

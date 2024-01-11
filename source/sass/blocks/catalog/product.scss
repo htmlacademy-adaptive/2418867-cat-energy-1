@@ -1,0 +1,249 @@
+.product {
+  margin: 0 20px 50px;
+  padding: 61px 0 0;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__list:not(:last-child) {
+    margin-block: 0 45px;
+  }
+
+  &__box {
+    padding-inline: 50% 0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: $font-oswald;
+    width: 76px;
+    margin: 0;
+  }
+
+  &__wrapper {
+    margin: 0;
+    padding-block: 16px 20px;
+  }
+
+  &__holder {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    color: #444444;
+    font-family: $font-lato;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__value {
+    color: #444444;
+    font-family: $font-lato;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  &__button {
+    display: block;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__button--more {
+    color: #444444;
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: #444444;
+    }
+  }
+
+  &__list--more {
+    text-align: center;
+    padding-block: 57px 0;
+  }
+
+  &__subtitle--more {
+    width: auto;
+    padding-block: 0 10px;
+  }
+
+  &__text {
+    color: #444444;
+    font-family: $font-lato;
+    font-size: 12px;
+    line-height: 16px;
+    margin-block: 0 20px;
+  }
+
+  &__list--more::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    margin-inline: -14px 0;
+    right: auto;
+    background-repeat: no-repeat;
+    background-image: url("../img/catalog/plus.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    margin: 0 20px 73px 29px;
+    padding: 163px 0 0;
+    flex-wrap: wrap;
+    gap: 138px 60px;
+
+
+    &__list {
+      width: 324px;
+      min-height: 260px;
+      padding: 163px 0 10px;
+      background-color: #f2f2f2;
+    }
+
+    &__list:not(:last-child) {
+      margin-block: 0;
+    }
+
+    &__box {
+      padding: 0;
+    }
+
+    &__subtitle {
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 24px;
+      width: 135px;
+      text-align: center;
+      padding-block: 0 20px;
+    }
+
+    &__holder {
+      border-bottom: solid 1px #cdcdcd;
+    }
+
+    &__holder:not(:last-child) {
+      margin-block: 0 12px;
+    }
+
+    &__wrapper {
+      padding: 0 37px 37px;
+    }
+
+    &__info,
+    &__value {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__button {
+      margin: 0 auto;
+      width: 250px;
+    }
+
+    &__list--more {
+      border: 2px solid #f2f2f2;
+      background-color: #ffffff;
+      box-sizing: border-box;
+    }
+
+    &__list--more::after {
+      width: 60px;
+      height: 60px;
+      top: 53px;
+      right: 131px;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-image: url("../img/catalog/tablet/tablet-plus.svg");
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 18px;
+      width: 170px;
+      margin: 0 auto;
+      text-align: center;
+      padding-block: 0 82px;
+    }
+
+    &__subtitle--more {
+      padding-block: 0 23px;
+    }
+
+    &__button--optionally {
+      width: 100%;
+      grid-area: button;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    margin: 0;
+    gap: 143px 80px;
+
+    &__subtitle {
+      padding-block: 0 23px;
+    }
+
+    &__list {
+      min-height: 269px;
+      width: 245px;
+      padding: 153px 0 10px;
+    }
+
+    &__list--more {
+      padding: 150px 0 10px;
+    }
+
+    &__list--more::after {
+      top: 49px;
+      right: 89px;
+    }
+
+    &__wrapper {
+      padding: 0 38px 33px 39px;
+    }
+
+    &__holder {
+      padding-block: 0 7px;
+    }
+
+    &__holder:not(:last-child) {
+      margin-block: 0 5px;
+    }
+
+    &__button {
+      width: 169px;
+    }
+
+    &__text {
+      padding-block: 0 93px;
+    }
+
+    &__button--optionally {
+      grid-area: button;
+      width: 100%;
+      margin: -4px 0 -1px -3px;
+    }
+  }
+}

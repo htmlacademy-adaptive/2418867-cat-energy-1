@@ -1,0 +1,41 @@
+.page-form {
+  padding-top: 28px;
+
+  &__title {
+    margin: 0 20px 37px;
+  }
+
+  &__text {
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    padding-top: 33px;
+
+    &__title {
+      margin: 0 20px 55px 69px;
+    }
+
+    &__text {
+      margin: 0 20px 0 71px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 23px 20px 0;
+
+    &__title {
+      margin: 0 20px 55px 0;
+    }
+
+    &__text {
+      margin: 0 20px 0 0;
+    }
+  }
+}
