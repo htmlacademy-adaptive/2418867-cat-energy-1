@@ -73,21 +73,6 @@
   // &__input:invalid + &__phone-icon {
   // //   stroke: #ff8282;
   // // }
-
-  &__textarea {
-    color: #444444;
-    font-family: $font-oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    display: block;
-    padding: 10px 10px 0 18px;
-    resize: none;
-    width: 253px;
-    height: 150px;
-    border: 1px solid #e7e7e7;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -104,23 +89,11 @@
       height: 52px;
       padding: 0 20px;
     }
-
-    &__textarea {
-      font-size: 20px;
-      line-height: 30px;
-      width: 595px;
-      height: 160px;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .input-text {
     gap: 11px;
-
-    &__textarea {
-      width: 1189px;
-      height: 163px;
-    }
   }
 }

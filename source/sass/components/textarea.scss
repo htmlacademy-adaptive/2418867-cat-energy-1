@@ -1,0 +1,35 @@
+.textarea {
+  color: #444444;
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 10px 10px 19px;
+  resize: none;
+  width: 253px;
+  height: 150px;
+  border: 1px solid #e7e7e7;
+  margin-inline: 16px 21px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    font-size: 20px;
+    line-height: 30px;
+    width: 595px;
+    height: 160px;
+    margin-inline: 71px 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    width: 1189px;
+    height: 163px;
+    padding: 10px 10px 2px 19px;
+    margin-inline: auto;
+  }
+}
