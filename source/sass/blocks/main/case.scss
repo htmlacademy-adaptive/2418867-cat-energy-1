@@ -1,5 +1,5 @@
 .case {
-  padding: 10px 10px;
+  padding: 10px 0 0;
   background-color: #eaeaea;
 
   &__title {
@@ -8,7 +8,7 @@
     font-weight: 400;
     line-height: 40px;
     margin: 0;
-    padding: 15px 0 10px 12px;
+    padding: 15px 10px 10px 22px;
   }
 
   &__description {
@@ -18,14 +18,18 @@
     line-height: 18px;
     color: #444444;
     margin: 0;
-    padding: 31px 7px 16px 12px;
+    padding: 31px 17px 16px 22px;
+  }
+
+  &__wrapper {
+    margin: 0 0 20px;
   }
 
   &__holder {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0 9px 19px 8px;
+    padding: 0 19px 19px 18px;
   }
 
   &__number {
@@ -39,7 +43,7 @@
     border: 2px solid #cdcdcd;
   }
 
-  .case__information {
+  &__information {
     font-family: $font-lato;
     font-size: 12px;
     line-height: 12px;
@@ -48,6 +52,7 @@
     background: #eaeaea;
     margin: -8px auto 0;
     padding-inline: 2px;
+    text-transform: lowercase;
   }
 
   &__text {
@@ -60,6 +65,10 @@
     text-align: center;
     margin: 0;
   }
+
+  &__slider {
+    padding: 0 0 42px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -70,19 +79,20 @@
     &__title {
       font-size: 60px;
       line-height: 60px;
-      padding: 0 0 12px 20px;
+      padding: 0 10px 12px 30px;
     }
 
     &__description {
       font-size: 16px;
       line-height: 24px;
-      padding: 48px 7px 16px 20px;
+      padding: 48px 17px 16px 30px;
       margin: 0 0 26px 0;
     }
 
     &__wrapper {
       display: flex;
-      padding: 0 12px 0 0;
+      padding: 0 22px 0 10px;
+      margin: 0 0 87px;
     }
 
     &__holder {
@@ -108,7 +118,7 @@
       border: 2px solid #cdcdcd;
     }
 
-    .case__information {
+    &__information {
       font-size: 14px;
       line-height: 14px;
       text-align: center;
@@ -125,6 +135,83 @@
       line-height: 29px;
       width: 172px;
       flex-grow: 1;
+    }
+
+    &__slider {
+      margin: 0;
+      padding: 0 0 100px;
+      background-color: #eaeaea;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 151px;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case {
+    display: grid;
+    grid-template-columns: 656px 785px;
+    grid-template-areas:
+      "case-title slider slider"
+      "case-wrap slider slider"
+      "case-wrap slider slider";
+
+    &__title {
+      grid-area: case-title;
+      padding: 24px 10px 42px 114px;
+    }
+
+    &__wrap {
+      grid-area: case-wrap;
+      background-color: #eaeaea;
+      padding: 47px 0 0 84px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__description {
+      padding: 23px 17px 16px 30px;
+      margin: 0 0 41px 0;
+      width: 436px;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__holder {
+      padding: 13px 3px 54px 17px;
+    }
+
+    &__information {
+      background: #eaeaea;
+      margin: -10px auto 0;
+    }
+
+    &__text {
+      width: auto;
+      text-align: left;
+      align-self: flex-start;
+      margin-inline: 20px 0;
+    }
+
+    &__slider {
+      grid-area: slider;
+      padding: 27px 0 83px;
+    }
+
+    &__slider::after {
+      height: 160px;
     }
   }
 }
