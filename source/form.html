@@ -41,8 +41,10 @@
     </nav>
   </header>
   <main class="main-container page-form">
-    <h1 class="inner-title page-form__title">Подбор программы</h1>
-    <p class="inner-text page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="page-form__wrap">
+      <h1 class="inner-title page-form__title">Подбор программы</h1>
+      <p class="inner-text page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
     <form action="" class="form">
       <div class="form__box-fieldset">
         <fieldset class="form__group name-group">
@@ -81,7 +83,11 @@
         </fieldset>
       </div>
       <fieldset class="form__group contacts-group">
-        <legend class="form__title">Контактные данные(владельца кота)</legend>
+        <legend class="form__title special-title">
+          <span class="special-title__container">
+            <span class="special-title__text">Контактные данные (владельца кота)</span>
+          </span>
+        </legend>
         <ul class="form__list contacts-group__list">
           <li class="contacts-group__item input-text">
             <svg fill="none" xmlns="http://www.w3.org/2000/svg" style='display: none;'>
@@ -117,14 +123,20 @@
             </svg>
           </li>
       </fieldset>
-      <fieldset class="form__group comments-group input-text">
-        <legend class="form__title">Комментарий</legend>
-        <textarea class="input-text__textarea" id="comments" name="comments" rows="5" cols="33"
+      <fieldset class="form__group comments-group">
+        <legend class="form__title special-title">
+          <span class="special-title__container">
+            <span class="special-title__text">Комментарий</span>
+          </span>
+        </legend>
+        <textarea class="textarea" id="comments" name="comments" rows="5" cols="33"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__group optionally-group">
-        <legend class="form__title">
-          <span class="line-title__wrapper">Дополнительно</span>
+        <legend class="form__title special-title">
+          <span class="special-title__container">
+            <span class="special-title__text">Дополнительно</span>
+          </span>
         </legend>
         <ul class="form__list optionally-group__list">
           <li class="optionally-group__item checkbox">

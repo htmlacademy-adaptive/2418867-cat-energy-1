@@ -18,12 +18,11 @@
 
 @media (min-width: $desktop-width) {
   .page-catalog {
-    width: 1220px;
-    margin: 0 auto;
     padding: 25px 20px 0;
 
     &__title {
-      margin-inline: 0;
+      margin-inline: auto;
+      width: 1220px;
     }
   }
 }

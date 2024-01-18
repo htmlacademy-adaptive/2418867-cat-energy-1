@@ -136,13 +136,14 @@
       bottom: 56px;
       left: 50%;
       width: 50%;
-      height: calc(100% + 160px);
+      height: calc(100% + 107px);
       position: absolute;
       z-index: -1;
       background-color: #62a53b;
       background-repeat: no-repeat;
       background-image: url("../img/desktop/welcome-background-desktop.png");
       background-position: top right;
+      background-size: auto 100%;
     }
 
     &::after {

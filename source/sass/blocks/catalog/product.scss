@@ -198,7 +198,8 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    margin: 0;
+    margin: 0 auto;
+    width: 1220px;
     gap: 143px 80px;
 
     &__subtitle {

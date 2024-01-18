@@ -1,13 +1,13 @@
 .cooperation {
   display: flex;
-  justify-content: space-between;
-  padding: 25px 10px 25px 20px;
+  justify-content: start;
+  padding: 25px 20px;
   min-height: 90px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
   &__title {
-    margin: 0 16px 0 0;
+    margin: 0;
     padding: 0;
     color: #111111;
     font-family: $font-oswald;
@@ -26,17 +26,18 @@
     font-weight: 400;
     line-height: 20px;
     width: 140px;
+    margin-left: auto;
   }
 }
 
 
 @media (min-width: $tablet-width) {
   .cooperation {
-    background-color: #f2f2f2;
     min-height: 200px;
     align-items: center;
     padding: 0 63px 0 68px;
-    margin: 53px 0 0;
+    margin: 0;
+    justify-content: space-between;
 
     &__title {
       width: 163px;

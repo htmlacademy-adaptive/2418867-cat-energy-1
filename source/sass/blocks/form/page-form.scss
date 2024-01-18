@@ -26,9 +26,13 @@
 
 @media (min-width: $desktop-width) {
   .page-form {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 23px 20px 0;
+    padding: 23px 0 0;
+
+    &__wrap {
+      width: 1220px;
+      margin: 0 auto;
+      padding-inline: 66px;
+    }
 
     &__title {
       margin: 0 20px 55px 0;

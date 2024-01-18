@@ -109,7 +109,8 @@
     grid-template-areas:
       "title title title"
       "item item promo";
-    margin: 76px 1px 0;
+    margin: 76px auto 0;
+    width: 1220px;
 
     &__title {
       grid-area: title;
@@ -128,7 +129,7 @@
       width: 896px;
       align-items: center;
       min-height: 71px;
-      grid-template-columns: 1fr 1fr 244px;
+      grid-template-columns: 286px 286px 244px;
       grid-template-areas: "subtitle wrapper button";
       padding: 9px 0;
       border: none;
