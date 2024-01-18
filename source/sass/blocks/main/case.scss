@@ -158,28 +158,48 @@
 
 @media (min-width: $desktop-width) {
   .case {
-    display: grid;
-    grid-template-columns: 656px 785px;
-    grid-template-areas:
-      "case-title slider slider"
-      "case-wrap slider slider"
-      "case-wrap slider slider";
+    &__container {
+      position: relative;
+      display: grid;
+      width: 1220px;
+      margin: 0 auto;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 105px;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 1;
+      }
+    }
+
+    &__component {
+      background-color: #eaeaea;
+    }
 
     &__title {
-      grid-area: case-title;
-      padding: 24px 10px 42px 114px;
+      padding: 24px 10px 76px 0;
+      z-index: 2;
+      width: 50%;
+    }
+
+    &__box {
+      width: 1220px;
+      margin: 0 auto;
+      display: flex;
+      background-color: #eaeaea;
     }
 
     &__wrap {
-      grid-area: case-wrap;
       background-color: #eaeaea;
-      padding: 47px 0 0 84px;
-      display: flex;
-      flex-direction: column;
+      padding: 18px 100px 20px 0;
     }
 
     &__description {
-      padding: 23px 17px 16px 30px;
+      padding: 52px 17px 16px 0;
       margin: 0 0 41px 0;
       width: 436px;
     }
@@ -187,10 +207,11 @@
     &__wrapper {
       flex-direction: column;
       margin: 0;
+      padding: 0 22px 0 0;
     }
 
     &__holder {
-      padding: 13px 3px 54px 17px;
+      padding: 13px 3px 54px 0;
     }
 
     &__information {
@@ -202,11 +223,9 @@
       width: auto;
       text-align: left;
       align-self: flex-start;
-      margin-inline: 20px 0;
     }
 
     &__slider {
-      grid-area: slider;
       padding: 27px 0 83px;
     }
 

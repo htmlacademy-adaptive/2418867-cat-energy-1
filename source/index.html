@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Cat Energy</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -94,71 +98,90 @@
       </ul>
     </section>
     <section class="case">
-      <h2 class="case__title">Живой пример</h2>
-      <div class="case__wrap">
-        <p class="case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день. </p>
-        <div class="case__wrapper">
-          <dl class="case__holder">
-            <div class="case__item">
-              <dt class="case__number">
-                5 кг
-              </dt>
-              <dd class="case__information">
-                Снижение веса
-              </dd>
-            </div>
-            <div class="case__item">
-              <dt class="case__number">
-                60 дней
-              </dt>
-              <dd class="case__information">
-                Затрачено времени
-              </dd>
-            </div>
-          </dl>
-          <p class="case__text">Затраты на питание: &ensp; &emsp; &emsp; 15 000 РУБ.</p>
-        </div>
+      <div class="case__container">
+        <h2 class="case__title">Живой пример</h2>
       </div>
-      <div class="case__slider">
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__screen slider__screen--before">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/slider/before-tablet-desktop.png"
-                  srcset="./img/slider/before-tablet-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/slider/before-tablet-desktop.png"
-                  srcset="./img/slider/before-tablet-desktop@2x.png 2x">
-                <img class="slider__image" src="./img/slider/before.png" srcset="./img/slider/before@2x.png 2x">
-              </picture>
-            </li>
-            <li class="slider__screen slider__screen--after">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/slider/after-tablet-desktop.png"
-                  srcset="./img/slider/after-tablet-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/slider/after-tablet-desktop.png"
-                  srcset="./img/slider/after-tablet-desktop@2x.png 2x">
-                <img class="slider__image" src="./img/slider/after.png" srcset="./img/slider/after@2x.png 2x">
-              </picture>
-            </li>
-          </ul>
-          <button class="slider__control" type="button">
-            <svg class="slider__stick-svg" width="40" height="256" viewBox="0 0 40 256" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" width="4" height="256" rx="2" />
-            </svg>
-            <svg class="slider__stick-svg--512" width="40" height="512" viewBox="0 0 40 512" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" width="4" height="512" rx="2" />
-            </svg>
-            <svg class="slider__arrow-svg" width="24" height="18" viewBox="0 0 24 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 0L0 9L8 18V0Z" />
-              <path d="M24 9L16 0V18L24 9Z" />
-            </svg>
-            <span class="visually-hidden">Переключить слайдер</span>
-          </button>
+      <div class="case__component">
+        <div class="case__box">
+          <div class="case__wrap">
+            <p class="case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+              по
+              16 часов в день. </p>
+            <div class="case__wrapper">
+              <dl class="case__holder">
+                <div class="case__item">
+                  <dt class="case__number">
+                    5 кг
+                  </dt>
+                  <dd class="case__information">
+                    Снижение веса
+                  </dd>
+                </div>
+                <div class="case__item">
+                  <dt class="case__number">
+                    60 дней
+                  </dt>
+                  <dd class="case__information">
+                    Затрачено времени
+                  </dd>
+                </div>
+              </dl>
+              <p class="case__text">Затраты на питание: &ensp; &emsp; &emsp; 15 000 РУБ.</p>
+            </div>
+          </div>
+          <div class="case__slider">
+            <div class="slider">
+              <ul class="slider__list">
+                <li class="slider__screen slider__screen--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/slider/before-tablet-desktop.webp 1x,./img/slider/before-tablet-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/slider/before-tablet-desktop.webp 1x, ./img/slider/before-tablet-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/slider/before.webp 1x, ./img/slider/before@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)" srcset="./img/slider/before-tablet-desktop.png"
+                      srcset="./img/slider/before-tablet-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/slider/before-tablet-desktop.png"
+                      srcset="./img/slider/before-tablet-desktop@2x.png 2x">
+                    <img class="slider__image" src="./img/slider/before.png" srcset="./img/slider/before@2x.png 2x">
+                  </picture>
+                </li>
+                <li class="slider__screen slider__screen--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/slider/after-tablet-desktop.webp 1x,./img/slider/after-tablet-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/slider/after-tablet-desktop.webp 1x, ./img/slider/after-tablet-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/slider/after.webp 1x, ./img/slider/after@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)" srcset="./img/slider/after-tablet-desktop.png"
+                      srcset="./img/slider/after-tablet-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/slider/after-tablet-desktop.png"
+                      srcset="./img/slider/after-tablet-desktop@2x.png 2x">
+                    <img class="slider__image" src="./img/slider/after.png" srcset="./img/slider/after@2x.png 2x">
+                  </picture>
+                </li>
+              </ul>
+              <button class="slider__control" type="button">
+                <svg class="slider__stick-svg" width="40" height="256" viewBox="0 0 40 256" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18" width="4" height="256" rx="2" />
+                </svg>
+                <svg class="slider__stick-svg--512" width="40" height="512" viewBox="0 0 40 512" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18" width="4" height="512" rx="2" />
+                </svg>
+                <svg class="slider__arrow-svg" width="24" height="18" viewBox="0 0 24 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0L0 9L8 18V0Z" />
+                  <path d="M24 9L16 0V18L24 9Z" />
+                </svg>
+                <span class="visually-hidden">Переключить слайдер</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

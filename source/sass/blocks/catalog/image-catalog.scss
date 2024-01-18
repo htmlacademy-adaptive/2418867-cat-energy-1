@@ -8,6 +8,10 @@
     left: 37px;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/chicken-500g.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/chicken-500g@2x.jpg");
+    }
   }
 
   &--chicken-1000g::after {
@@ -19,6 +23,10 @@
     left: 29px;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/chicken-1000g.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/chicken-1000g@2x.jpg");
+    }
   }
 
   &--fish-500g::after {
@@ -30,6 +38,10 @@
     left: 37px;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/fish-500g.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/fish-500g@2x.jpg");
+    }
   }
 
   &--fish-1000g::after {
@@ -41,6 +53,10 @@
     left: 29px;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/fish-1000g.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/fish-1000g@2x.jpg");
+    }
   }
 
   &--buckwheat-500g::after {
@@ -52,6 +68,10 @@
     left: 37px;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/buckwheat-500g.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/buckwheat-500g@2x.jpg");
+    }
   }
 
   &--buckwheat-1000g::after {
@@ -63,6 +83,10 @@
     left: 29px;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/buckwheat-1000g.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/buckwheat-1000g@2x.jpg");
+    }
   }
 
   &--rice-500g::after {
@@ -74,6 +98,10 @@
     left: 35px;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/rice-500g.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/rice-500g@2x.jpg");
+    }
   }
 }
 
@@ -85,6 +113,10 @@
       top: -50px;
       left: 82px;
       background-image: url("../img/catalog/tablet/tablet-chicken-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-chicken-500g@2x.png");
+      }
     }
 
     &--chicken-1000g::after {
@@ -93,6 +125,10 @@
       top: -67px;
       left: 79px;
       background-image: url("../img/catalog/tablet/tablet-chicken-1000g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-chicken-1000g@2x.png");
+      }
     }
 
     &--fish-500g::after {
@@ -101,6 +137,10 @@
       top: -51px;
       left: 81px;
       background-image: url("../img/catalog/tablet/tablet-fish-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-fish-500g@2x.png");
+      }
     }
 
     &--fish-1000g::after {
@@ -109,6 +149,10 @@
       top: -64px;
       left: 79px;
       background-image: url("../img/catalog/tablet/tablet-fish-1000g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-fish-1000g@2x.png");
+      }
     }
 
     &--buckwheat-500g::after {
@@ -117,6 +161,10 @@
       top: -50px;
       left: 82px;
       background-image: url("../img/catalog/tablet/tablet-buckwheat-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-buckwheat-500g@2x.png");
+      }
     }
 
     &--buckwheat-1000g::after {
@@ -125,6 +173,10 @@
       top: -64px;
       left: 79px;
       background-image: url("../img/catalog/tablet/tablet-buckwheat-1000g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-buckwheat-1000g@2x.png");
+      }
     }
 
     &--rice-500g::after {
@@ -133,6 +185,10 @@
       top: -51px;
       left: 81px;
       background-image: url("../img/catalog/tablet/tablet-rice-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-rice-500g@2x.png");
+      }
     }
   }
 }
@@ -145,6 +201,10 @@
       top: -50px;
       left: 43px;
       background-image: url("../img/catalog/desktop/desktop-chicken-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-chicken-500g@2x.png");
+      }
     }
 
     &--chicken-1000g::after {
@@ -153,6 +213,10 @@
       top: -62px;
       left: 39px;
       background-image: url("../img/catalog/desktop/desktop-chicken-1000g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-chicken-1000g@2x.png");
+      }
     }
 
     &--fish-500g::after {
@@ -161,6 +225,10 @@
       top: -51px;
       left: 42px;
       background-image: url("../img/catalog/desktop/desktop-fish-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-fish-500g@2x.png");
+      }
     }
 
     &--fish-1000g::after {
@@ -169,6 +237,10 @@
       top: -62px;
       left: 39px;
       background-image: url("../img/catalog/desktop/desktop-fish-1000g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-fish-1000g@2x.png");
+      }
     }
 
     &--buckwheat-500g::after {
@@ -177,6 +249,10 @@
       top: -51px;
       left: 43px;
       background-image: url("../img/catalog/desktop/desktop-buckwheat-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-buckwheat-500g@2x.png");
+      }
     }
 
     &--buckwheat-1000g::after {
@@ -185,6 +261,10 @@
       top: -63px;
       left: 39px;
       background-image: url("../img/catalog/desktop/desktop-buckwheat-1000g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-buckwheat-1000g@2x.png");
+      }
     }
 
     &--rice-500g::after {
@@ -193,6 +273,10 @@
       top: -52px;
       left: 42px;
       background-image: url("../img/catalog/desktop/desktop-rice-500g.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-rice-500g@2x.png");
+      }
     }
   }
 }

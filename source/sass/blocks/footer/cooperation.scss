@@ -6,6 +6,14 @@
   box-sizing: border-box;
   background-color: #ffffff;
 
+  &--color-catalog {
+    background-color: #f2f2f2;
+  }
+
+  &--color-form {
+    background-color: #f2f2f2;
+  }
+
   &__title {
     margin: 0;
     padding: 0;
@@ -60,7 +68,7 @@
     padding: 60px 76px 55px 80px;
     width: 567px;
     position: absolute;
-    top: 38px;
+    top: 93px;
     left: 111px;
     box-sizing: border-box;
     background-color: #ffffff;
