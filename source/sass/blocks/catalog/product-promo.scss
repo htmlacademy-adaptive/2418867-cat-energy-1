@@ -32,20 +32,20 @@
 
 @media (min-width: $tablet-width) {
   .product-promo {
-    margin: 0 0 74px 8px;
+    margin: 0 auto 74px;
     background-image: url("../img/catalog/tablet/tablet-background-promo.jpg");
     min-height: 200px;
     background-repeat: no-repeat;
     max-width: 707px;
 
     &__text::after {
-      left: 78px;
+      left: 82px;
     }
 
     &__text {
       max-width: 182px;
       text-align: left;
-      margin: 0 103px 26px auto;
+      margin: 0 100px 26px auto;
     }
   }
 }
