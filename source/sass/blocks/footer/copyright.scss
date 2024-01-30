@@ -1,4 +1,24 @@
 .copyright {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    width: 27px;
+    height: 34px;
+    mask: url("../img/logo-html-academy.svg");
+    background-color: #666666;
+  }
+
+  &:hover &::after {
+    background-color: #444444;
+  }
+
   &__link {
     font-family: $font-lato;
     font-size: 16px;
@@ -7,5 +27,31 @@
     line-height: 20px;
     color: #444444;
     text-decoration: none;
+    flex: 1;
+    height: 100%;
+    padding: 16px 0 0;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 163px;
+
+    &::after {
+      top: 13px;
+      right: 9px;
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    &::after {
+      top: 27px;
+      right: 19px;
+    }
   }
 }

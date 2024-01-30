@@ -10,18 +10,8 @@
   }
 
   &__copyright {
-    padding: 25px 58px 21px 18px;
+    padding: 11px 16px 21px 18px;
     position: relative;
-  }
-
-  &__copyright::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 17px;
-    width: 27px;
-    height: 34px;
-    background-image: url("../img/logo-html-academy.svg");
   }
 }
 
@@ -40,11 +30,7 @@
     }
 
     &__copyright {
-      padding: 18px 62px 21px 16px;
-    }
-
-    &__copyright::after {
-      top: 13px;
+      padding: 6px 7px 6px 16px;
     }
   }
 }
@@ -52,12 +38,12 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     &__social {
-      padding: 0 94px;
+      padding: 0 91px;
       min-height: 169px;
     }
 
     &__copyright {
-      padding: 18px 69px 21px 16px;
+      padding: 18px 20px 21px 16px;
     }
   }
 }
