@@ -2,9 +2,11 @@
   &__list {
     list-style: none;
     padding: 10px 40px;
-    margin: 0;
+    margin: 0 21px 0 21px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
   }
 
   &__item {
@@ -55,6 +57,8 @@
   .social {
     &__list {
       padding: 0 9px 0 38px;
+      margin: 0;
+      border: 0;
     }
   }
 }
