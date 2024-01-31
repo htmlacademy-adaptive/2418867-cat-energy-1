@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Cat Energy</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicon/apple.png"> <!-- 180×180 -->
@@ -49,7 +49,7 @@
       <h1 class="inner-title page-form__title">Подбор программы</h1>
       <p class="inner-text page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
-    <form action="" class="form">
+    <form action="https://echo.htmlacademy.ru/" method="post" class="form">
       <div class="form__box-fieldset">
         <fieldset class="form__group name-group">
           <legend class="visually-hidden">Имя питомца</legend>
@@ -59,12 +59,12 @@
               <input id="name" type="text" class="input-text__input" placeholder="барсик" required>
             </li>
             <li class="name-group__item input-text">
-              <label for="" class="input-text__label">Вес (кг):*</label>
-              <input type="text" class="input-text__input" placeholder="7" required>
+              <label for="weight" class="input-text__label">Вес (кг):*</label>
+              <input id="weight" type="text" class="input-text__input" placeholder="7" required>
             </li>
             <li class="name-group__item input-text">
-              <label for="" class="input-text__label">Возраст&nbsp;(лет):</label>
-              <input type="text" class="input-text__input" placeholder="7">
+              <label for="age" class="input-text__label">Возраст&nbsp;(лет):</label>
+              <input id="age" type="text" class="input-text__input" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -97,13 +97,13 @@
             <svg fill="none" xmlns="http://www.w3.org/2000/svg" style='display: none;'>
               <symbol viewBox="0 0 20 20" id="email-icon">
                 <g>
-                  <path id="email-icon" d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z"
-                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </g>
               </symbol>
             </svg>
-            <label for="name" class="input-text__label">E-mail:*</label>
-            <input id="name" type="text" class="input-text__input input-text__input--e-mail-icon"
+            <label for="e-mail" class="input-text__label">E-mail:*</label>
+            <input id="e-mail" type="text" class="input-text__input input-text__input--e-mail-icon"
               placeholder="kuklachev@gmail.com" required>
             <svg class='input-text__email-icon'>
               <use xlink:href='#email-icon'></use>
@@ -113,19 +113,20 @@
             <svg fill="none" xmlns="http://www.w3.org/2000/svg" style='display: none;'>
               <symbol viewBox="0 0 20 20" id="phone-icon">
                 <g>
-                  <path id="phone-icon"
+                  <path
                     d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
                     stroke-linecap="round" stroke-linejoin="round" />
                 </g>
               </symbol>
             </svg>
-            <label for="" class="input-text__label">Телефон:*</label>
-            <input type="text" class="input-text__input input-text__input--phone" placeholder="8 (960) 900-60-90"
-              required>
+            <label for="phone" class="input-text__label">Телефон:*</label>
+            <input id="phone" type="text" class="input-text__input input-text__input--phone"
+              placeholder="8 (960) 900-60-90" required>
             <svg class='input-text__phone-icon'>
               <use xlink:href='#phone-icon'></use>
             </svg>
           </li>
+        </ul>
       </fieldset>
       <fieldset class="form__group comments-group">
         <legend class="form__title special-title">

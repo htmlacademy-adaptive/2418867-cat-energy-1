@@ -48,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .checkbox {
     &__label {
-      padding: 9px 0 10px 58px;
+      padding: 5px 0 10px 58px;
       font-size: 20px;
       line-height: normal;
     }
@@ -63,13 +63,17 @@
       width: 26px;
       height: 26px;
       left: 6px;
-      top: 11px;
+      top: 8px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox {
+    &__label {
+      padding: 9px 0 10px 58px;
+    }
+
     &__label::before {
       left: -1px;
       top: 3px;
