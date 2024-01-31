@@ -1,3 +1,6 @@
+.main-nav {
+  position: relative;
+}
 
 .main-nav__toggle {
   width: 18px;
@@ -7,8 +10,33 @@
   background-color: #ff0000;
   cursor: pointer;
   position: absolute;
-  top: 22px;
+  top: -40px; 
   right: 21px;
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-color: #ff0000;
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-color: green;
+  display: block;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,6 +51,10 @@
       min-width: 456px;
     }
   }
+
+  .main-nav--closed .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -32,3 +64,5 @@
     margin: 48px auto 0;
   }
 }
+
+
