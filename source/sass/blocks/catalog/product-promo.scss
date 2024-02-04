@@ -1,4 +1,6 @@
 .product-promo {
+  text-decoration: none;
+  &__wrap {
   display: flex;
   position: relative;
   align-items: end;
@@ -8,6 +10,7 @@
   min-height: 290px;
   max-width: 280px;
   background-image: url("../img/catalog/background-promo.png");
+  }
 
   &__text::after {
     content: "";
@@ -32,11 +35,13 @@
 
 @media (min-width: $tablet-width) {
   .product-promo {
+    &__wrap {
     margin: 0 auto 74px;
     background-image: url("../img/catalog/tablet/tablet-background-promo.jpg");
     min-height: 200px;
     background-repeat: no-repeat;
     max-width: 707px;
+    }
 
     &__text::after {
       left: 82px;
@@ -53,6 +58,7 @@
 
 @media (min-width: $desktop-width) {
   .product-promo {
+    &__wrap {
     justify-content: flex-end;
     margin: 0 62px 0 0;
     width: 245px;
@@ -60,6 +66,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/catalog/desktop/desktop-background-promo.jpg");
     grid-area: promo;
+    }
 
     &__text {
       text-align: center;

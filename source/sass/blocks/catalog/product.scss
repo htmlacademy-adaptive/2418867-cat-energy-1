@@ -15,6 +15,7 @@
 
   &__box {
     padding-inline: 50% 0;
+    position: relative;
   }
 
   &__subtitle {
@@ -58,6 +59,7 @@
     border: none;
     width: 100%;
     cursor: pointer;
+    box-sizing: border-box;
   }
 
   &__button--more {
@@ -108,16 +110,28 @@
   .product {
     display: flex;
     margin: 0 20px 73px 29px;
-    padding: 163px 0 0;
+    padding: 94px 0 0;
     flex-wrap: wrap;
-    gap: 138px 60px;
+    gap: 70px 60px;
 
 
     &__list {
       width: 324px;
       min-height: 260px;
-      padding: 163px 0 10px;
+      padding: 0 0 36px;
       background-color: #f2f2f2;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 71px;
+        background-color: #ffffff;
+        z-index: 1;
+      }
     }
 
     &__list:not(:last-child) {
@@ -134,7 +148,7 @@
       line-height: 24px;
       width: 135px;
       text-align: center;
-      padding-block: 0 20px;
+      padding-block: 0 24px;
     }
 
     &__holder {
@@ -142,7 +156,7 @@
     }
 
     &__holder:not(:last-child) {
-      margin-block: 0 12px;
+      margin-block: 0 11px;
     }
 
     &__wrapper {
@@ -157,20 +171,22 @@
 
     &__button {
       margin: 0 auto;
-      width: 250px;
+      width: 223px;
     }
 
     &__list--more {
       border: 2px solid #f2f2f2;
       background-color: #ffffff;
-      box-sizing: border-box;
+      margin: 72px 0 0;
+      padding: 159px 0 0;
     }
 
     &__list--more::after {
       width: 60px;
       height: 60px;
-      top: 53px;
-      right: 131px;
+      top: 48px;
+      right: 133px;
+      left: auto;
       margin: 0;
       background-repeat: no-repeat;
       background-image: url("../img/catalog/tablet/tablet-plus.svg");
@@ -200,7 +216,7 @@
   .product {
     margin: 0 auto;
     width: 1220px;
-    gap: 143px 80px;
+    gap: 73px 80px;
 
     &__subtitle {
       padding-block: 0 23px;
@@ -208,8 +224,8 @@
 
     &__list {
       min-height: 269px;
-      width: 245px;
-      padding: 153px 0 10px;
+      width: 244px;
+      padding: 0 0 40px;
     }
 
     &__list--more {
