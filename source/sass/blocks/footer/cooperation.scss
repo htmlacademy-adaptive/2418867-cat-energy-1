@@ -67,11 +67,11 @@
   .cooperation {
     padding: 60px 76px 55px 80px;
     width: 567px;
-    position: absolute;
-    top: 93px;
-    left: 111px;
+    position: relative;
     box-sizing: border-box;
     background-color: #ffffff;
+    z-index: 3;
+    transform: translate(110px, 0);
 
     &__title {
       font-size: 20px;

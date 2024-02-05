@@ -40,8 +40,12 @@
     display: none;
   }
 
-  &__input:checked + &__label::after {
+  &__input:checked+&__label::after {
     display: block;
+  }
+
+  &__input:focus-visible+&__label::before {
+      border: 1px solid #69b738;
   }
 }
 

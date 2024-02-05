@@ -1,6 +1,9 @@
 const sliderControl = document.querySelector('.slider__control');
 const slider = document.querySelector('.slider');
+const mainNav = document.querySelector('.main-nav');
+const mainNavToggle = document.querySelector('.main-nav__toggle');
 
+mainNav.classList.add('main-nav--closed');
 
 if (sliderControl) {
   let flag = false;
@@ -14,3 +17,8 @@ if (sliderControl) {
     }
   });
 }
+
+mainNavToggle.addEventListener('click', () => {
+  mainNav.classList.toggle('main-nav--closed');
+  mainNav.classList.toggle('main-nav--opened');
+})
