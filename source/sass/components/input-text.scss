@@ -38,10 +38,10 @@
       border: 2px solid #444444;
     }
 
-    // &:invalid {
-    //   outline: 2px solid #ff8282;
-    //   border: none;
-    // }
+    &:invalid:not(:placeholder-shown) {
+      outline: 2px solid #ff8282;
+      border: none;
+    }
   }
 
   &__email-icon {
@@ -51,7 +51,7 @@
     right: 13px;
     top: 13px;
     fill: #ffffff;
-    stroke: #000000;
+    color: #000000;
   }
 
   &__phone-icon {
@@ -61,18 +61,18 @@
     right: 13px;
     top: 13px;
     fill: #ffffff;
-    stroke: #000000;
+    color: #000000;
   }
 
   &__input:focus + &__email-icon,
   &__input:focus + &__phone-icon {
-    stroke: #69b738;
+    color: #69b738;
   }
 
-  // // &__input:invalid + &__email-icon,
-  // &__input:invalid + &__phone-icon {
-  // //   stroke: #ff8282;
-  // // }
+  &__input:invalid:not(:placeholder-shown) + &__email-icon,
+  &__input:invalid:not(:placeholder-shown) + &__phone-icon {
+    color: #ff8282;
+  }
 }
 
 @media (min-width: $tablet-width) {
