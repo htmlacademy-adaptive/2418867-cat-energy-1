@@ -18,6 +18,21 @@
     position: relative;
   }
 
+  &__link {
+    text-decoration: none;
+    color: #222222;
+
+    &:hover {
+      opacity: .6;
+      position: relative;
+      z-index: 2;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
   &__subtitle {
     font-size: 16px;
     font-style: normal;
@@ -109,10 +124,11 @@
 @media (min-width: $tablet-width) {
   .product {
     display: flex;
-    margin: 0 20px 73px 29px;
+    justify-content: center;
+    margin: 0 20px 80px 29px;
     padding: 94px 0 0;
     flex-wrap: wrap;
-    gap: 70px 60px;
+    gap: 72px 60px;
 
 
     &__list {
@@ -160,7 +176,7 @@
     }
 
     &__wrapper {
-      padding: 0 37px 37px;
+      padding: 0 37px 34px;
     }
 
     &__info,
@@ -171,7 +187,7 @@
 
     &__button {
       margin: 0 auto;
-      width: 223px;
+      width: 251px;
     }
 
     &__list--more {
@@ -203,11 +219,6 @@
 
     &__subtitle--more {
       padding-block: 0 23px;
-    }
-
-    &__button--optionally {
-      width: 100%;
-      grid-area: button;
     }
   }
 }
@@ -255,12 +266,6 @@
 
     &__text {
       padding-block: 0 93px;
-    }
-
-    &__button--optionally {
-      grid-area: button;
-      width: 100%;
-      margin: -4px 0 -1px -3px;
     }
   }
 }

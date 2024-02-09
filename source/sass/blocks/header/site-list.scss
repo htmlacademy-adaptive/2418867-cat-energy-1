@@ -34,6 +34,7 @@
   .site-list {
     padding: 28px 10px 33px;
     border-bottom: none;
+    box-sizing: border-box;
 
     &__link {
       font-size: 18px;
@@ -46,7 +47,7 @@
     }
 
     &__item {
-      padding-inline: 26px 7px;
+      padding-inline: 27px 6px;
       border-top: none;
     }
   }
@@ -57,7 +58,7 @@
     padding: 0 0 24px;
 
     &__item {
-      padding: 38px 34px 0;
+      padding: 38px 0 0 33px;
     }
 
     &__link {

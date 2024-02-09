@@ -110,7 +110,7 @@
     }
 
     &__number {
-      width: auto;
+      width: 162px;
       font-size: 30px;
       line-height: 37px;
       text-transform: uppercase;
@@ -214,6 +214,10 @@
 
     &__holder {
       padding: 13px 3px 54px 0;
+    }
+
+    &__number {
+      width: 159px;
     }
 
     &__information {

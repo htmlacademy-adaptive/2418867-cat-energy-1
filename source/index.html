@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Cat Energy</title>
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
@@ -12,7 +15,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--index">
   <header class="main-header">
     <div class="main-header__wrap">
       <a class="main-header__logo logo" href="index.html">
@@ -47,7 +50,7 @@
       </nav>
     </div>
   </header>
-  <main class="main-container">
+  <main class="main">
     <h1 class="visually-hidden">Магазин функционального питания для котов Cat Energy</h1>
     <section class="welcome">
       <div class="welcome__box">
@@ -143,10 +146,9 @@
                       srcset="./img/slider/before-tablet-desktop.webp 1x, ./img/slider/before-tablet-desktop@2x.webp 2x">
                     <source type="image/webp" srcset="./img/slider/before.webp 1x, ./img/slider/before@2x.webp 2x">
 
-                    <source media="(min-width: 1200px)" srcset="./img/slider/before-tablet-desktop.png"
-                      srcset="./img/slider/before-tablet-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="./img/slider/before-tablet-desktop.png"
-                      srcset="./img/slider/before-tablet-desktop@2x.png 2x">
+                    <source media="(min-width: 1200px)" srcset="./img/slider/before-tablet-desktop.png">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/slider/before-tablet-desktop.png, ./img/slider/before-tablet-desktop@2x.png 2x">
                     <img class="slider__image" src="./img/slider/before.png" srcset="./img/slider/before@2x.png 2x"
                       alt="before-cat">
                   </picture>
@@ -159,10 +161,9 @@
                       srcset="./img/slider/after-tablet-desktop.webp 1x, ./img/slider/after-tablet-desktop@2x.webp 2x">
                     <source type="image/webp" srcset="./img/slider/after.webp 1x, ./img/slider/after@2x.webp 2x">
 
-                    <source media="(min-width: 1200px)" srcset="./img/slider/after-tablet-desktop.png"
-                      srcset="./img/slider/after-tablet-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="./img/slider/after-tablet-desktop.png"
-                      srcset="./img/slider/after-tablet-desktop@2x.png 2x">
+                    <source media="(min-width: 1200px)" srcset="./img/slider/after-tablet-desktop.png">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/slider/after-tablet-desktop.png, ./img/slider/after-tablet-desktop@2x.png 2x">
                     <img class="slider__image" src="./img/slider/after.png" srcset="./img/slider/after@2x.png 2x"
                       alt="after-cat">
                   </picture>
@@ -173,8 +174,8 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <rect x="18" width="4" height="256" rx="2" />
                 </svg>
-                <svg class="slider__stick-svg--512" width="40" height="512" viewBox="0 0 40 512" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="slider__stick-svg slider__stick-svg--512" width="40" height="512" viewBox="0 0 40 512"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="18" width="4" height="512" rx="2" />
                 </svg>
                 <svg class="slider__arrow-svg" width="24" height="18" viewBox="0 0 24 18" fill="none"
@@ -194,9 +195,9 @@
     <section class="map">
       <h2 class="visually-hidden">Расположение компании на карте</h2>
       <div class="cooperation">
-        <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <h3 class="cooperation__title">Приглашаем <br>к сотрудничеству дилеров!</h3>
         <address class="cooperation__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span class="cooperation__indent">Санкт-Петербург</span>
         </address>
       </div>
       <div class="map__google">

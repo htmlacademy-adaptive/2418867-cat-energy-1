@@ -12,6 +12,7 @@
     top: -44px;
     right: 23px;
     background-color: #ffffff;
+    display: none;
 
     &::after,
     &::before {
@@ -33,6 +34,10 @@
     &::after {
       bottom: 11px;
     }
+  }
+
+  &--closed &__toggle {
+    display: block;
   }
 
   &--opened &__toggle {
@@ -89,6 +94,8 @@
 
     &--closed &__list {
       display: flex;
+      width: 489px;
+      flex-wrap: wrap;
     }
   }
 }
@@ -97,5 +104,10 @@
   .main-nav {
     padding: 0;
     margin: 0;
+
+    &--closed &__list {
+      width: 610px;
+      justify-content: end;
+    }
   }
 }
