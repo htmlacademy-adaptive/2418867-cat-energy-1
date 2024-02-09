@@ -267,5 +267,10 @@
     &__description {
       margin-bottom: 27px;
     }
+
+    &__link--arrow::after {
+      top: 7px;
+      left: 130px;
+    }
   }
 }

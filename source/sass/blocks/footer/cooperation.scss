@@ -60,28 +60,31 @@
       line-height: 20px;
       min-height: 80px;
     }
+
+    &__indent {
+      display: block;
+      margin: 19px 0 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .cooperation {
-    padding: 60px 76px 55px 80px;
+    padding: 62px 80px;
     width: 567px;
     position: relative;
     box-sizing: border-box;
     background-color: #ffffff;
     z-index: 3;
-    transform: translate(110px, 0);
+    left: 50%;
+    margin-left: -610px;
 
     &__title {
       font-size: 20px;
-      line-height: 26px;
     }
 
     &__address {
-      font-size: 16px;
       text-align: left;
-      line-height: 20px;
     }
   }
 }

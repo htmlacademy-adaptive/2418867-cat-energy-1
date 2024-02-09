@@ -1,15 +1,21 @@
 .product-promo {
   text-decoration: none;
+
   &__wrap {
-  display: flex;
-  position: relative;
-  align-items: end;
-  padding: 0 0 43px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  min-height: 290px;
-  max-width: 280px;
-  background-image: url("../img/catalog/background-promo.png");
+    display: flex;
+    position: relative;
+    align-items: end;
+    padding: 0 0 43px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 290px;
+    max-width: 280px;
+    background-image: url("../img/catalog/background-promo.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/background-promo@2x.png");
+      background-size: 1338px auto;
+    }
   }
 
   &__text::after {
@@ -36,11 +42,16 @@
 @media (min-width: $tablet-width) {
   .product-promo {
     &__wrap {
-    margin: 0 auto 74px;
-    background-image: url("../img/catalog/tablet/tablet-background-promo.jpg");
-    min-height: 200px;
-    background-repeat: no-repeat;
-    max-width: 707px;
+      margin: 0 auto 74px;
+      background-image: url("../img/catalog/tablet/tablet-background-promo.jpg");
+      min-height: 200px;
+      background-repeat: no-repeat;
+      max-width: 707px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/tablet/tablet-background-promo@2x.jpg");
+        background-size: 1338px auto;
+      }
     }
 
     &__text::after {
@@ -59,13 +70,18 @@
 @media (min-width: $desktop-width) {
   .product-promo {
     &__wrap {
-    justify-content: flex-end;
-    margin: 0 62px 0 0;
-    width: 245px;
-    height: 288px;
-    background-repeat: no-repeat;
-    background-image: url("../img/catalog/desktop/desktop-background-promo.jpg");
-    grid-area: promo;
+      justify-content: flex-end;
+      margin: 0 62px 0 0;
+      width: 245px;
+      height: 288px;
+      background-repeat: no-repeat;
+      background-image: url("../img/catalog/desktop/desktop-background-promo.jpg");
+      grid-area: promo;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/desktop/desktop-background-promo@2x.jpg");
+        background-size: 1338px auto;
+      }
     }
 
     &__text {

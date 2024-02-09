@@ -1,14 +1,14 @@
 .copyright {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 100%;
   width: auto;
 
   &::after {
     content: "";
     position: absolute;
     top: 20px;
-    right: 17px;
+    right: 20px;
     width: 27px;
     height: 34px;
     mask: url("../img/logo-html-academy.svg");
@@ -27,8 +27,6 @@
     line-height: 20px;
     color: #444444;
     text-decoration: none;
-    flex: 1;
-    height: 100%;
     padding: 16px 28px 0 0;
     box-sizing: border-box;
     z-index: 3;
@@ -40,9 +38,14 @@
     width: 163px;
 
     &::after {
-      top: 13px;
+      top: -1px;
       right: 9px;
       z-index: 1;
+    }
+
+    &__link {
+      margin: 0 -3px -23px;
+      padding: 0 50px 22px 0;
     }
   }
 }
@@ -50,8 +53,13 @@
 @media (min-width: $desktop-width) {
   .copyright {
     &::after {
-      top: 27px;
-      right: 19px;
+      top: 12px;
+      right: 20px;
+
+      &__link {
+        margin: 0-3px -22px;
+        padding: 0 56px 25px 0;
+      }
     }
   }
 }

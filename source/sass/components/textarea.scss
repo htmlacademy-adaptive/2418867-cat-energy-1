@@ -6,12 +6,13 @@
   line-height: 18px;
   text-transform: uppercase;
   display: block;
-  padding: 10px 10px 10px 19px;
+  padding: 13px 10px 10px 19px;
   resize: none;
-  width: 253px;
+  width: calc(100% - 40px);
   height: 150px;
   border: 1px solid #e7e7e7;
   margin-inline: 16px 21px;
+  box-sizing: border-box;
 }
 
 
@@ -22,6 +23,7 @@
     width: 595px;
     height: 160px;
     margin-inline: 71px 23px;
+    box-sizing: content-box;
   }
 }
 

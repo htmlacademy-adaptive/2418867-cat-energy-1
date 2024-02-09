@@ -1,4 +1,17 @@
 .page-body {
   font-family: $font-oswald;
   margin: 0;
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .page-body--index::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 600px;
+    background-color: #62a53b;
+    left: 50%;
+    top: 0;
+  }
 }

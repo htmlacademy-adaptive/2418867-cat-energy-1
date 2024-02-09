@@ -51,6 +51,15 @@
     font-size: 14px;
     line-height: 14px;
   }
+
+  &__button {
+    grid-area: button;
+    display: block;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -64,7 +73,7 @@
     }
 
     &__item {
-      padding: 82px 0 67px;
+      padding: 75px 0 74px;
       margin-inline: 8px 0;
     }
 
@@ -73,9 +82,8 @@
       grid-template-areas:
         "subtitle wrapper"
         "button button";
-      padding: 11px 41px 33px;
+      padding: 21px 41px 23px;
       border-bottom: solid 1px #cdcdcd;
-      border-inline: solid 1px #cdcdcd;
     }
 
     &__subtitle {
@@ -83,6 +91,7 @@
       line-height: 20px;
       grid-area: subtitle;
       align-self: center;
+      margin: -13px 0 0;
     }
 
     &__wrapper {
@@ -100,6 +109,11 @@
     &__price {
       font-size: 16px;
       line-height: 20px;
+    }
+
+    &__button {
+      width: 100%;
+      grid-area: button;
     }
   }
 }
@@ -141,12 +155,19 @@
 
     &__subtitle {
       grid-area: subtitle;
+      margin: -3px 0 0;
     }
 
     &__wrapper {
       justify-content: space-between;
       grid-area: wrapper;
       padding-block: 0;
+    }
+
+    &__button {
+      grid-area: button;
+      width: 100%;
+      margin: -4px 0 -1px -3px;
     }
   }
 }
