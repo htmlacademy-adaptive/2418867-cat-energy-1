@@ -1,45 +1,45 @@
 .page-form {
   padding-top: 28px;
+}
 
-  &__title {
-    margin: 0 20px 37px;
-  }
+.page-form__title {
+  margin: 0 20px 37px;
+}
 
-  &__text {
-    margin: 0 20px;
-  }
+.page-form__text {
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-form {
     padding-top: 33px;
+  }
 
-    &__title {
-      margin: 0 20px 55px 69px;
-    }
+  .page-form__title {
+    margin: 0 20px 55px 69px;
+  }
 
-    &__text {
-      margin: 0 20px 0 71px;
-    }
+  .page-form__text {
+    margin: 0 20px 0 71px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-form {
     padding: 26px 0 72px;
+  }
 
-    &__wrap {
-      width: 1220px;
-      margin: 0 auto;
-      padding-inline: 66px;
-    }
+  .page-form__wrap {
+    width: 1220px;
+    margin: 0 auto;
+    padding-inline: 66px;
+  }
 
-    &__title {
-      margin: 0 20px 55px 0;
-    }
+  .page-form__title {
+    margin: 0 20px 55px 0;
+  }
 
-    &__text {
-      margin: 0 20px 0 0;
-    }
+  .page-form__text {
+    margin: 0 20px 0 0;
   }
 }
