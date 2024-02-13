@@ -5,13 +5,16 @@
 
 .map__google {
   height: 365px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .map__google-alt {
   position: absolute;
   top: auto;
   width: 100%;
-  height: 362px;
+  height: auto;
   left: 0;
   z-index: -2;
 }
@@ -31,7 +34,7 @@
   }
 
   .map__google-alt {
-    height: 400px;
+    height: auto;
     bottom: 0;
     top: auto;
   }

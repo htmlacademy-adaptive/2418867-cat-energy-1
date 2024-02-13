@@ -74,7 +74,7 @@
   }
 
   .optionally__item {
-    padding: 75px 0 74px;
+    padding: 80px 0 71px;
     margin-inline: 8px 0;
   }
 
@@ -83,7 +83,7 @@
     grid-template-areas:
       "subtitle wrapper"
       "button button";
-    padding: 21px 50px 23px 41px;
+    padding: 18px 50px 26px 41px;
     border-bottom: solid 1px #cdcdcd;
   }
 
@@ -106,7 +106,7 @@
   .optionally__text {
     font-size: 16px;
     line-height: 20px;
-    margin: 11px 8px 18px 4px;
+    margin: 11px 0 18px 3px;
   }
 
   .optionally__price {
@@ -127,13 +127,13 @@
     grid-template-areas:
       "title title title"
       "item item promo";
-    margin: 76px auto 0;
+    margin: 0 auto;
     width: 1220px;
   }
 
   .optionally__title {
     grid-area: title;
-    margin: 0 0 79px;
+    margin: 0 0 80px;
   }
 
   .optionally__item {
@@ -150,7 +150,7 @@
     min-height: 71px;
     grid-template-columns: 286px 286px 244px;
     grid-template-areas: "subtitle wrapper button";
-    padding: 9px 0;
+    padding: 9px 0 8px;
     border: none;
     border-bottom: solid 1px #cdcdcd;
     border-inline: none;
@@ -166,6 +166,16 @@
     justify-content: space-between;
     grid-area: wrapper;
     padding-block: 0;
+  }
+
+  .optionally__text {
+    margin: 17px 8px 9px 0;
+  }
+
+  .optionally__price {
+    margin: 16px 2px 18px 9px;
+    text-align: left;
+    min-width: 41px;
   }
 
   .optionally__button {
