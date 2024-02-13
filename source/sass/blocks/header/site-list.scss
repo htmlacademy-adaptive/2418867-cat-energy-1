@@ -3,77 +3,77 @@
   margin: 0;
   list-style: none;
   border-bottom: 1px solid #e6e6e6;
+}
 
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+}
 
-  &__item {
-    border-top: 1px solid #e6e6e6;
+.site-list__link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  padding: 23px 0;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.6;
   }
 
-  &__link {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
-    display: block;
-    padding: 23px 0;
-    text-align: center;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    padding: 28px 10px 33px;
+    padding: 28px 3px 33px;
     border-bottom: none;
     box-sizing: border-box;
+  }
 
-    &__link {
-      font-size: 18px;
-      line-height: 24px;
-      padding: 10px 0;
-    }
+  .site-list__link {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 0 8px;
+  }
 
-    &__link--active {
-      border-bottom: 2px solid #69b738;
-    }
+  .site-list__link--active {
+    border-bottom: 2px solid #69b738;
+  }
 
-    &__item {
-      padding-inline: 27px 6px;
-      border-top: none;
-    }
+  .site-list__item {
+    padding-inline: 26px 7px;
+    border-top: none;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .site-list {
     padding: 0 0 24px;
+  }
 
-    &__item {
-      padding: 38px 0 0 33px;
-    }
+  .site-list__item {
+    padding: 38px 0 0 34px;
+  }
 
-    &__link {
-      font-size: 20px;
-      line-height: normal;
-      padding: 0 0 6px;
-    }
+  .site-list__link {
+    font-size: 20px;
+    line-height: normal;
+    padding: 0 0 6px;
+  }
 
-    &__link--white-color {
-      color: #ffffff;
-      padding: 0 0 7px 0;
-    }
+  .site-list__link--white-color {
+    color: #ffffff;
+    padding: 0 0 7px 0;
+  }
 
-    &__link--active-white {
-      border-bottom: 2px solid #ffffff;
-    }
+  .site-list__link--active-white {
+    border-bottom: 2px solid #ffffff;
   }
 }
