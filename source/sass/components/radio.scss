@@ -47,6 +47,12 @@
   border: 1px solid #69b738;
 }
 
+.radio__input:disabled + .radio__label {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+
 
 @media (min-width: $tablet-width) {
   .radio__label {

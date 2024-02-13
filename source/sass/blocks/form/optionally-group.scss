@@ -1,5 +1,5 @@
 .optionally-group {
-  padding: 33px 0 34px;
+  padding: 34px 0;
 }
 
 .optionally-group__item:not(:last-child) {
@@ -7,7 +7,7 @@
 }
 
 .optionally-group__list {
-  padding-inline: 23px 21px;
+  padding-inline: 21px;
 }
 
 
@@ -38,7 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .optionally-group {
-    padding: 51px 0 47px 0;
+    padding: 54px 0 47px 0;
     margin-block: 0 12px;
   }
 

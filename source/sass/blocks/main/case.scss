@@ -100,7 +100,7 @@
   .case__holder {
     width: 534px;
     justify-content: flex-start;
-    padding: 9px 3px 13px 17px;
+    padding: 12px 3px 13px 17px;
   }
 
   .case__item {
@@ -142,7 +142,7 @@
   .case__indent {
     margin: 0 0 0 63px;
   }
-  
+
   .case__slider {
     margin: 0;
     padding: 0 0 100px;
@@ -228,6 +228,7 @@
   .case__information {
     background: #eaeaea;
     margin: -10px auto 0;
+    padding-inline: 0 7px;
   }
 
   .case__text {
