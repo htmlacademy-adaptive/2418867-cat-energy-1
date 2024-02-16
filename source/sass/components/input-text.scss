@@ -85,10 +85,11 @@
   .input-text__phone-icon {
     top: 17px;
     right: 17px;
-}
+  }
 
-@media (min-width: $desktop-width) {
-  .input-text {
-    gap: 11px;
+  @media (min-width: $desktop-width) {
+    .input-text {
+      gap: 11px;
+    }
   }
 }
