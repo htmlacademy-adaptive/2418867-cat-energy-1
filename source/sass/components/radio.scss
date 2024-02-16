@@ -53,11 +53,10 @@
   cursor: default;
 }
 
-
 @media (min-width: $tablet-width) {
   .radio__label {
     font-size: 20px;
-    padding: 34px 0 0 85px;
+    padding: 35px 0 0 85px;
   }
 
   .radio__label::before {
@@ -72,5 +71,11 @@
     height: 17px;
     top: 35px;
     left: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio__label {
+    padding: 34px 0 0 85px;
   }
 }
