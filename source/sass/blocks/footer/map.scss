@@ -1,63 +1,68 @@
 .map {
   min-height: 400px;
   position: relative;
+}
 
-  &__google-alt {
-    position: absolute;
-    top: auto;
-    width: 100%;
-    height: 362px;
-    left: 0;
-    z-index: -2;
-  }
+.map__google {
+  height: 365px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
-  &__iframe-map {
-    width: 100%;
-    height: 362px;
-  }
+.map__google-alt {
+  position: absolute;
+  top: auto;
+  width: 100%;
+  height: auto;
+  left: 0;
+  z-index: -2;
+}
+
+.map__iframe-map {
+  width: 100%;
+  height: 362px;
 }
 
 @media (min-width: $tablet-width) {
-  .map {
+  .map__google {
+    height: 400px;
+  }
 
-    &__google {
-      height: 400px;
-    }
+  .map__iframe-map {
+    height: 400px;
+  }
 
-    &__iframe-map {
-      height: 400px;
-    }
-
-    &__google-alt {
-      height: 400px;
-      bottom: 0;
-      top: auto;
-    }
+  .map__google-alt {
+    height: auto;
+    bottom: 0;
+    top: auto;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .map {
     padding: 94px 0 50px;
     box-sizing: border-box;
+  }
 
-    &__google {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  .map__google {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    &__iframe-map {
-      height: 100%;
-    }
+  .map__iframe-map {
+    height: 100%;
+  }
 
-    &__google-alt {
-      z-index: -2;
-      top: auto;
-      bottom: auto;
-      height: 100%;
-    }
+  .map__google-alt {
+    z-index: -2;
+    top: auto;
+    bottom: auto;
+    height: 100%;
   }
 }

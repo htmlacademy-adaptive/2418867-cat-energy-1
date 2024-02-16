@@ -20,9 +20,10 @@
     <div class="main-header__wrap">
       <a class="main-header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="./img/desktop/logo-header-cat-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./img/tablet/logo-header-cat-tablet.svg">
-          <img class="logo__image" src="./img/logo-mobile-cat.svg" alt="Cat Energy">
+          <source media="(min-width: 1200px)" srcset="./img/desktop/logo-header-cat-desktop.svg" width="202"
+            height="59">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-header-cat-tablet.svg" width="174" height="50">
+          <img class="logo__image" src="./img/logo-mobile-cat.svg" alt="Cat Energy" width="33" height="38">
         </picture>
       </a>
       <nav class="main-nav">
@@ -69,7 +70,7 @@
             </li>
             <li class="name-group__item input-text">
               <label for="age" class="input-text__label">Возраст&nbsp;(лет):</label>
-              <input id="age" type="text" class="input-text__input" placeholder="7">
+              <input id="age" type="tel" class="input-text__input" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -102,8 +103,8 @@
             <label for="e-mail" class="input-text__label">E-mail:*</label>
             <input id="e-mail" type="email" class="input-text__input input-text__input--e-mail-icon"
               placeholder="kuklachev@gmail.com" required>
-            <svg class='input-text__email-icon'  viewBox="0 0 20 20">
-              <use xlink:href="./img/sprite.svg#e-mail-icon"></use>
+            <svg class='input-text__email-icon' width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href='./img/sprite.svg#e-mail-icon'></use>
             </svg>
           </li>
           <li class="contacts-group__item input-text">
@@ -112,7 +113,7 @@
             <input id="phone" type="tel" class="input-text__input input-text__input--phone"
               placeholder="8 (960) 900-60-90" required>
             <svg class='input-text__phone-icon' width="20" height="20" viewBox="0 0 20 20">
-              <use xlink:href="./img/sprite.svg#phone-icon"></use>
+              <use xlink:href='./img/sprite.svg#phone-icon'></use>
             </svg>
           </li>
         </ul>
@@ -176,15 +177,26 @@
           width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <picture>
-          <source media="(min-width: 1200px)" srcset="./img/map/map-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="./img/map/map-tablet.jpg">
-          <img class="map__google-alt" src="./img/map/map-phone.jpg" alt="Google Map">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/map/map-desktop.webp 1x, ./img/map/map-desktop@2.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/map/map-tablet.webp 1x, ./img/map/map-tablet@2.webp 2x" width="768" height="400">
+          <source type="image/webp" srcset="./img/map/map-phone.webp 1x, ./img/map/map-phone@2.webp 2x" width="320"
+            height="362">
+
+
+          <source media="(min-width: 1200px)" srcset="./img/map/map-desktop.jpg, ./img/map/map-desktop@2.jpg 2x"
+            width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="./img/map/map-tablet.jpg, ./img/map/map-tablet@2.jpg 2x"
+            width="768" height="400">
+          <img class="map__google-alt" src="./img/map/map-phone.jpg" srcset="./img/map/map-phone@2.jpg 2x"
+            alt="Google Map" width="320" height="362">
         </picture>
       </div>
     </section>
     <div class="main-footer__social social">
       <a class="main-footer__logo logo" href="#">
-        <img src="./img/footer-logo-mobile.svg" alt="Cat Energy text">
+        <img src="./img/footer-logo-mobile.svg" alt="Cat Energy text" width="128" height="24">
       </a>
       <ul class="social__list">
         <li class="social__item">

@@ -1,9 +1,9 @@
 .comments-group {
-  padding: 39px 0 23px;
+  padding: 39px 0 22px;
+}
 
-  &__list {
-    padding-inline: 16px 21px;
-  }
+.comments-group__list {
+  padding-inline: 16px 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +16,6 @@
 @media (min-width: $desktop-width) {
   .comments-group {
     padding: 78px 0 40px;
-    margin-block: 0 9px;
+    margin-block: 0 5px;
   }
 }

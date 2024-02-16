@@ -3,63 +3,63 @@
   align-items: center;
   height: 100%;
   width: auto;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 27px;
-    height: 34px;
-    mask: url("../img/logo-html-academy.svg");
-    background-color: #666666;
-  }
-
-  &:hover::after {
-    background-color: #69b738;
-  }
-
-  &__link {
-    font-family: $font-lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    color: #444444;
-    text-decoration: none;
-    padding: 16px 28px 0 0;
-    box-sizing: border-box;
-    z-index: 3;
-  }
 }
+
+.copyright::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 27px;
+  height: 34px;
+  mask: url("../img/logo-html-academy.svg");
+  background-color: #666666;
+}
+
+.copyright:hover::after {
+  background-color: #69b738;
+}
+
+.copyright__link {
+  font-family: $font-lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  padding: 16px 28px 0 0;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;
+  }
 
-    &::after {
-      top: -1px;
-      right: 9px;
-      z-index: 1;
-    }
+  .copyright::after {
+    top: -1px;
+    right: 3px;
+    z-index: 1;
+  }
 
-    &__link {
-      margin: 0 -3px -23px;
-      padding: 0 50px 22px 0;
-    }
+  .copyright__link {
+    margin: 0 -3px -23px;
+    padding: 0 50px 22px 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .copyright {
-    &::after {
-      top: 12px;
-      right: 20px;
 
-      &__link {
-        margin: 0-3px -22px;
-        padding: 0 56px 25px 0;
-      }
+@media (min-width: $desktop-width) {
+  .copyright::after {
+    top: 12px;
+    right: 20px;
+
+    .copyright__link {
+      margin: 0 -3px -22px;
+      padding: 0 56px 25px 0;
     }
   }
 }

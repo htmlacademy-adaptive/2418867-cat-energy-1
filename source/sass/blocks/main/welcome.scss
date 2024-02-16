@@ -1,75 +1,74 @@
-.welcome {
-  &__container {
-    position: relative;
-    padding-bottom: 138px;
+.welcome__container {
+  position: relative;
+  padding-bottom: 138px;
 
-    &::after {
-      content: "";
-      background-image: url("../img/index-cat-mobile.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      width: 280px;
-      height: 270px;
-      bottom: 3px;
-      left: 50%;
-      transform: translateX(-50%);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index-cat-mobile@2x.png");
-        background-size: 1338px auto;
-      }
-    }
-  }
-
-  &__wrapper {
-    background-color: #62a53b;
-    background-image: url("../img/welcome-background-mobile.jpg");
-    background-size: auto 100%;
+  &::after {
+    content: "";
+    background-image: url("../img/index-cat-mobile.png");
     background-repeat: no-repeat;
-    padding: 27px 0 164px 0;
-    background-position: center 0;
-    position: relative;
-    min-height: 111px;
+    background-position: 0 0;
+    position: absolute;
+    width: 280px;
+    height: 270px;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/welcome-background-mobile@2x.jpg");
-      background-size: 1338px auto;
+      background-image: url("../img/index-cat-mobile@2x.png");
+      background-size: 280px auto;
     }
   }
+}
 
-  &__title {
-    color: #ffffff;
-    font-family: $font-oswald;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    margin: 0 auto 25px;
-    padding: 0;
-    text-align: center;
-    position: relative;
-    width: 284px;
-  }
+.welcome__wrapper {
+  background-color: #62a53b;
+  background-image: url("../img/welcome-background-mobile.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding: 27px 0 164px 0;
+  background-position: center 0;
+  position: relative;
+  min-height: 111px;
 
-  &__intro {
-    color: #ffffff;
-    font-family: $font-oswald;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    position: relative;
-    width: 246px;
-  }
-
-  &__program-selection {
-    display: block;
-    position: relative;
-    margin: 0 20px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcome-background-mobile@2x.jpg");
+    background-size: 320px auto;
   }
 }
+
+.welcome__title {
+  color: #ffffff;
+  font-family: $font-oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0 auto 25px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 284px;
+}
+
+.welcome__intro {
+  color: #ffffff;
+  font-family: $font-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 246px;
+}
+
+.welcome__program-selection {
+  display: block;
+  position: relative;
+  margin: 0 20px;
+}
+
 
 @media (min-width: $tablet-width) {
   .welcome {
@@ -85,57 +84,57 @@
       position: absolute;
       width: 709px;
       height: 609px;
-      bottom: -19px;
+      bottom: -25px;
       left: 51%;
       transform: translateX(-50%);
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/tablet/welcome-product-tablet@2x.png");
-        background-size: 1338px auto;
+        background-size: 700px auto;
       }
     }
+  }
 
-    &__container {
-      position: relative;
-      padding: 0;
+  .welcome__container {
+    position: relative;
+    padding: 0;
 
-      &::after {
-        display: none;
-      }
+    &::after {
+      display: none;
     }
+  }
 
-    &__wrapper {
-      background: none;
-      margin: 0 67px 0 120px;
-      padding: 0;
-    }
+  .welcome__wrapper {
+    background: none;
+    margin: 0 67px 0 120px;
+    padding: 0;
+  }
 
-    &__title {
-      color: #000000;
-      font-size: 60px;
-      line-height: 60px;
-      text-align: start;
-      margin: 0 0 40px;
-      width: 416px;
-    }
+  .welcome__title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    margin: 0 0 40px;
+    width: 416px;
+  }
 
-    &__intro {
-      color: #000000;
-      font-size: 20px;
-      line-height: 20px;
-      text-align: start;
-      margin: 0 0 50px;
-      width: auto;
-    }
+  .welcome__intro {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    margin: 0 0 50px;
+    width: auto;
+  }
 
-    &__program-selection {
-      display: inline-flex;
-      padding: 14px 26px;
-      margin: 0 0 0 122px;
-      font-size: 20px;
-      line-height: 26px;
-    }
+  .welcome__program-selection {
+    display: inline-flex;
+    padding: 14px 26px;
+    margin: 0 0 0 122px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -156,13 +155,13 @@
       z-index: -1;
       background-color: #62a53b;
       background-repeat: no-repeat;
-      background-image: url("../img/desktop/welcome-background-desktop.png");
+      background-image: url("../img/desktop/welcome-background-desktop.jpg");
       background-position: top right;
       background-size: auto auto;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/desktop/welcome-background-desktop@2x.png");
-        background-size: 1338px auto;
+        background-image: url("../img/desktop/welcome-background-desktop@2x.jpg");
+        background-size: 717px auto;
       }
     }
 
@@ -173,28 +172,28 @@
       background-image: url("../img/desktop/welcome-product-desktop.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/desktop/welcome-product-desktop.png@2x.png");
-        background-size: 1338px auto;
+        background-image: url("../img/desktop/welcome-product-desktop@2x.png");
+        background-size: 552px auto;
       }
     }
+  }
 
-    &__box {
-      width: 1220px;
-      margin: 0 auto;
-      padding: 8px 0 0 0;
-    }
+  .welcome__box {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 8px 0 0 0;
+  }
 
-    &__wrapper {
-      margin: 0 0 0 80px;
-    }
+  .welcome__wrapper {
+    margin: 0 0 0 80px;
+  }
 
-    &__intro {
-      width: 300px;
-    }
+  .welcome__intro {
+    width: 300px;
+  }
 
-    &__program-selection {
-      margin: 0 0 0 80px;
-      padding: 14px 27px;
-    }
+  .welcome__program-selection {
+    margin: 0 0 0 80px;
+    padding: 14px 27px;
   }
 }
