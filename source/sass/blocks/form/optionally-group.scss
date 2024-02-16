@@ -15,40 +15,41 @@
   .optionally-group {
     padding: 59px 0 45px;
 
-  .optionally-group__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 659px;
-    gap: 27px;
-    padding-inline: 72px 23px;
+    .optionally-group__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 659px;
+      gap: 27px;
+      padding-inline: 72px 23px;
+    }
+
+    .optionally-group__item {
+      min-width: 227px;
+      flex: 1;
+      height: 46px;
+    }
+
+    .optionally-group__item:not(:last-child) {
+      margin: 0;
+    }
   }
 
-  .optionally-group__item {
-    min-width: 227px;
-    flex: 1;
-    height: 46px;
-  }
 
-  .optionally-group__item:not(:last-child) {
-    margin: 0;
-  }
-}
+  @media (min-width: $desktop-width) {
+    .optionally-group {
+      padding: 54px 0 47px 0;
+      margin-block: 0 12px;
+    }
 
+    .optionally-group__list {
+      width: 1220px;
+      margin: 0 auto;
+      gap: 80px;
+      padding: 0;
+    }
 
-@media (min-width: $desktop-width) {
-  .optionally-group {
-    padding: 54px 0 47px 0;
-    margin-block: 0 12px;
-  }
-
-  .optionally-group__list {
-    width: 1220px;
-    margin: 0 auto;
-    gap: 80px;
-    padding: 0;
-  }
-
-  .optionally-group__item {
-    max-width: 316px;
+    .optionally-group__item {
+      max-width: 316px;
+    }
   }
 }
